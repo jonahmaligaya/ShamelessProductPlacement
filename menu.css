@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
 .menu_button {
     position: absolute;
     z-index: 3;
-    right: 35px;
+    left: 35px;
     top: 35px;
     cursor: pointer;
     transition: all 0.5s ease-out;
@@ -10,7 +12,7 @@
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: black;
+    background: white;
     transition: all 0.5s ease-out;
 }
 .menu_button.close {
@@ -27,12 +29,43 @@
 }
 
 .menu {
-    position: fixed;
+    position: absolute;
+    top: 400px;
+    color: white;
     top: 0;
     width: 100%;
-    opacity: 0.9;
+    height: 100%;
     visibility: hidden;
 }
 .menu.open {
     visibility: visible;
+    transition: all 0.5s ease-in;
+    background-color: black;
+}
+.menu ul {
+    position: absolute;
+    top: 90%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.menu.open ul {
+    transition: all 1s ease-in;
+    transform: translate(0,-100px);
+}
+.menu li {
+    float: left;
+}
+.menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 60px;
+    font-size: 30px;
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+}
+.menu li a:hover {
+    color: gray;
 }
