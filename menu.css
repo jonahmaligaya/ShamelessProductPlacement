@@ -44,7 +44,8 @@
 }
 .menu ul {
     position: absolute;
-    top: 90%;
+    top: 10%;
+    left: 10%;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -61,7 +62,7 @@
     display: block;
     color: white;
     text-align: center;
-    padding: 60px;
+    padding: 40px;
     font-size: 30px;
     text-decoration: none;
     font-family: 'Quicksand', sans-serif;

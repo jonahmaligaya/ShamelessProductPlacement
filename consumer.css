@@ -5,20 +5,20 @@ body {
     margin: 0;
     padding: 0;
 }
-.consumer.close {
+.content.close {
     transition: all 0.4s ease-in;
     visibility: hidden;
 }
-.consumer #shameless_product_placement_logo {
+.content #shameless_product_placement_logo {
     height: 100px;
     float: right;
     margin-top: 35px;
     margin-right: 35px;
 }
-.consumer #shameless_product_placement_logo:hover {
+.content #shameless_product_placement_logo:hover {
     opacity: 90%;
 }
-.consumer #shih_tzu {
+.content #shih_tzu {
     height: 10px;
     opacity: 0;
     position: absolute;
@@ -39,12 +39,12 @@ body {
         opacity: 1;
     }
 }
-.consumer #shih_zoo_logo {
+.content #shih_zoo_logo {
     position: absolute;
     left: 4%;
     bottom: 20%;
 }
-.consumer #shih_zoo_download {
+.content #shih_zoo_download {
     position: absolute;
     bottom: 10%;
     left: 10%;
@@ -58,6 +58,6 @@ body {
     font-size: 15px;
     padding: 15px 15px;
 }
-.consumer #shih_zoo_download:hover {
+.content #shih_zoo_download:hover {
     opacity: 90%;
 }
