@@ -44,7 +44,7 @@
 }
 .menu ul {
     position: absolute;
-    top: 10%;
+    top: -10%;
     left: 10%;
     list-style-type: none;
     margin: 0;
@@ -53,7 +53,7 @@
 }
 .menu.open ul {
     transition: all 1s ease-in;
-    transform: translate(0,-100px);
+    transform: translate(0,100px);
 }
 .menu li {
     float: left;
