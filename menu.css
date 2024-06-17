@@ -36,6 +36,7 @@
     height: 100%;
     visibility: hidden;
     overflow: hidden;
+    background-size: cover;
 }
 .menu.open {
     visibility: visible;
@@ -44,7 +45,7 @@
 }
 .menu ul {
     position: absolute;
-    top: -10%;
+    top: -80px;
     left: 10%;
     list-style-type: none;
     margin: 0;

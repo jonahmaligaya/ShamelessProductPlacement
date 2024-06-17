@@ -9,6 +9,11 @@ body {
     transition: all 0.4s ease-in;
     visibility: hidden;
 }
+.unscrollable {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
 .content #shameless_product_placement_logo {
     position: absolute;
     height: auto;
