@@ -36,6 +36,7 @@
     width: 100%;
     height: 100%;
     visibility: hidden;
+    overflow: clip;
 }
 .menu.open {
     visibility: visible;
@@ -63,7 +64,7 @@
     color: white;
     text-align: center;
     padding: 40px;
-    font-size: 30px;
+    font-size: 150%;
     text-decoration: none;
     font-family: 'Quicksand', sans-serif;
 }
