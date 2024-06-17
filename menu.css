@@ -69,4 +69,5 @@
 }
 .menu li a:hover {
     color: gray;
+    transition: color 250ms linear;
 }
