@@ -30,7 +30,6 @@
 
 .menu {
     position: absolute;
-    top: 400px;
     color: white;
     top: 0;
     width: 100%;
@@ -42,6 +41,10 @@
     visibility: visible;
     transition: all 0.5s ease-in;
     background-color: black;
+    margin: 0;
+    padding: 0;
+    width: 105vw;
+    height: 100vw;
 }
 .menu ul {
     position: absolute;
