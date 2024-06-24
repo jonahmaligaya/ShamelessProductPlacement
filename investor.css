@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
 body {
-    background-image: url('assets/investor_background.gif');
     margin: 0;
     padding: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/investor_background.jpg');
+
 }
 html {
     max-height: 2000px;
@@ -20,216 +20,161 @@ html {
     visibility: hidden;
 }
 .content #shameless_product_placement_logo {
-    width: 55%;
+    width: 15%;
     height: auto;
     position: absolute;
-    left: 30%;
-    top: 25%;
+    left: 6%;
+    top: 2%;
 }
-.content #investor_buttons {
-    position: absolute;
-    left: 3%;
-    top: 70%;
+.content #shameless_product_placement_logo:hover {
+    opacity: 90%;
 }
-.content #investor_contact_button {
-    height: 60px;
-    border-color: black;
-    background-color: transparent;
-    border-radius: 999px;
+.content .main_investment_information {
+    margin-top: 10%;
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 60% 35%;
+    column-gap: 5%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 4%;
+}
+.content .video {
+    width: 60vw;
+    height: 60vh;
+}
+.content .video #shih_zoo_investment_video {
+    width: 100%;
+    height: 100%;
+}
+.content .investment_information #title {
+    font-size: 7vw;
+    font-family: 'MuseoModerno';
+    color: white;
+}
+.content .investment_information #description {
+    font-size: 1.3vw;
+    font-family: 'Fira Sans';
+    color: gray;
+}
+.content .investment_information #invested {
+    font-size: 1vw;
+    font-family: 'Fira Sans';
+    color: white;
+}
+.content .investment_information #options {
+    background: #7335b1;
+    border-radius: 7px;
+    box-shadow: #7335b1 0 10px 20px -10px;
     box-sizing: border-box;
-    color: black;
+    color: #FFFFFF;
     cursor: pointer;
-    font-size: 3vw;
+    font-size: 1vw;
     line-height: 24px;
     opacity: 1;
     outline: 0 solid transparent;
     padding: 8px 18px;
     word-break: break-word;
-    border-style: solid;
-    margin-left: 20px;
+    border: 0;
     font-family:'Fira Sans';
     text-decoration: none;
 }
-.content #investor_contact_button:hover {
-    background-color: black;
-    color: white;
+.content .investment_information #options:hover {
+    background: #4c2375;
 }
-.content #investor_overlay {
-    position: absolute;
-    top: 80%;
+.content .investment_information #invest {
+    margin-left: 1vw;
+    background: #7335b1;
+    border-radius: 7px;
+    box-shadow: #7335b1 0 10px 20px -10px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 1vw;
+    line-height: 24px;
+    opacity: 1;
+    outline: 0 solid transparent;
+    padding: 8px 18px;
+    word-break: break-word;
+    border: 0;
+    font-family:'Fira Sans';
+    text-decoration: none;
+}
+.content .investment_information #invest:hover {
+    background: #4c2375;
+}
+.content .extra_investment_information {
+    display: block;
     width: 100%;
-    background-image: linear-gradient(transparent, white 10%);
+    border-top: 1px solid #FFFFFF;
+    background-image: black;
 }
-.content #investor_information {
-    margin-top: 20%;
-}
-.content #investor_title {
+.content .extra_investment_information #title {
+    color: white;
+    font-size: 6vw;
+    font-family: 'MuseoModerno';
+    margin-left: 1vw;
+    margin-right: 1vw;
+    font-weight: bold;
     text-align: center;
-    font-size: 10vw;
-    font-family: 'EB Garamond';
 }
-.content .investor_information_part_1 {
+.content .extra_investment_information .section_titles {
+    color: white;
+    font-size: 4vw;
+    font-family: 'MuseoModerno';
+    margin-left: 1vw;
+    margin-right: 1vw;
+    text-align: center;
+}
+.content .extra_investment_information .team_section .people {
     display: grid;
-    align-items: center; 
-    grid-template-columns: 40% 60%;
-    column-gap: 5px;
+    grid-template-columns: 40% 58%;
+    column-gap: 2%;
     margin-left: 2%;
     margin-right: 2%;
-
+    margin-bottom: 4%;
 }
-.content #investor_details_part_1 {
-    font-size: 1.5vw;
-    margin-right: 20px;
-    margin-left: 20px;
-    font-family: 'EB Garamond';
-    display: inline-block;
-}
-.content #investor_example_1 {
-    display: inline-block;
+.content .extra_investment_information .team_section #ceo {
     width: 100%;
 }
-.content .investor_information_part_2 {
-    margin-top: 20px;
-    display: grid;
-    align-items: center; 
-    grid-template-columns: 60% 40%;
-    column-gap: 5px;
-    margin-left: 2%;
-    margin-right: 2%;
-}
-.content #investor_details_part_2 {
-    font-size: 1.5vw;
-    margin-left: 10px;
-    margin-right: 20px;
-    font-family: 'EB Garamond';
-    display: inline-block;
-}
-.content #investor_example_2 {
-    display: inline-block;
-    width: 100%;
-}
-.content #investor_contact_information {
-    margin-top: 10vh;
-    grid-template-columns: 30% 70%;
-    display: grid;
-    height: 260vh;
-}
-.content #contact_section {
-    display: inline-block;
-    background-image: linear-gradient(black, #7b58d1 70%);
-    font-family: 'Oswald';
+.content .extra_investment_information .name_titles {
+    font-size: 4vw;
+    font-family: 'Fira Sans';
+    color: white;
     text-align: center;
+}
+.content .extra_investment_information .section_information {
+    font-size: 1.2vw;
+    font-family: 'Fira Sans';
     color: white;
 }
-.content #contact_title {
-    font-size: 5vw;
+.content .extra_investment_information .team_section #game_developer {
+    width: 100%;
 }
-.content #contact_secondary_title {
-    font-size: 3vw;
+.options_menu_options {
+    border: 1px solid black;
+    margin-top: 2vh;
 }
-.content #contact_information {
+.options_menu_options .options_menu_images {
+    width: 100%;
+}
+.options_menu_options .options_menu_titles {
+    font-size: 2vw;
+    font-family: 'Fira Sans';
+}
+.options_menu_options .options_menu_values {
     font-size: 1.5vw;
-    text-align: left;
-    margin-left: 5%;
+    font-family: 'Fira Sans';
 }
-.content #contact_form {
-    display: inline;
-    background-image: linear-gradient(gray, #7b58d1 70%);
-    text-align: center;
-    font-family: 'Oswald';
+.options_menu_options .options_menu_descriptions {
+    font-size: 1vw;
+    font-family: 'Fira Sans';
 }
-.content .contact_form_name {
-    width: 45%;
-    display: inline;
-    margin-top: 40px;
-    margin-left: 1%;
-    margin-right: 1%;
-    text-align: center;
-    padding: 10px 0;
-    background: none;
-    border: none;
-    border-bottom: 2px solid black;
-    color: black;
-    font-size: 14px;
-    outline: none;
-    transition: border-color .2s;
+.options_menu_options .options_menu_benefits_title {
+    font-size: 1vw;
+    font-family: 'Fira Sans';
 }
-.content .contact_form_name::placeholder {
-    color: black;
-}
-.content #contact_form_email {
-    width: 92.5%;
-    display: inline;
-    margin-top: 20px;
-    margin-left: 1%;
-    margin-right: 1%;
-    text-align: center;
-    padding: 10px 0;
-    background: none;
-    border: none;
-    border-bottom: 2px solid black;
-    color: black;
-    font-size: 14px;
-    outline: none;
-    transition: border-color .2s;
-}
-.content #contact_form_email::placeholder {
-    color: black;
-}
-.content #contact_form_company {
-    width: 92.5%;
-    display: inline;
-    margin-top: 20px;
-    margin-left: 1%;
-    margin-right: 1%;
-    text-align: center;
-    padding: 10px 0;
-    background: none;
-    border: none;
-    border-bottom: 2px solid black;
-    color: black;
-    font-size: 14px;
-    outline: none;
-    transition: border-color .2s;
-}
-.content #contact_form_company::placeholder {
-    color: black;
-}
-.content #contact_form_message {
-    width: 92.5%;
-    height: 100%;
-    display: inline;
-    padding: 10px 10px;
-    background: none;
-    border: 2px solid black;
-    color: black;
-    font-size: 14px;
-    outline: none;
-    transition: border-color .2s;
-    margin-top: 20px;
-    margin-left: 1%;
-    margin-right: 1%;
-    margin-bottom: 3%;
-    resize: none;
-}
-.content #contact_form_message::placeholder {
-    color: black;
-}
-.content #contact_form_submit_button {
-    width: 92.5%;
-    display: inline;
-    padding: 10px 10px;
-    background-color: white;
-    border: 2px solid black;
-    color: black;
-    font-size: 14px;
-    outline: none;
-    transition: border-color .2s;
-    margin-top: 20px;
-    margin-left: 1%;
-    margin-right: 1%;
-    margin-bottom: 3%;
-}
-.content #contact_form_submit_button:hover {
-    background-color: gray;
+.options_menu_options .options_menu_benefits {
+    font-size: 1vw;
+    font-family: 'Fira Sans';
 }

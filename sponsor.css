@@ -26,6 +26,9 @@ html {
     left: 30%;
     top: 25%;
 }
+.content #shameless_product_placement_logo:hover {
+    opacity: 90%;
+}
 .content #sponsor_buttons {
     position: absolute;
     left: 3%;
