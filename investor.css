@@ -151,6 +151,23 @@ html {
 .content .extra_investment_information .team_section #game_developer {
     width: 100%;
 }
+.content .extra_investment_information .faq_section {
+    margin-left: 5vw;
+    margin-right: 5vw;
+    padding-bottom: 5vh;
+}
+.content .extra_investment_information .faq_section .questions {
+    font-weight: bold;
+    text-decoration: underline;
+    color: white;
+    font-size: 1.3vw;
+    font-family: 'Fira Sans';
+}
+.content .extra_investment_information .faq_section .answers {
+    color: white;
+    font-size: 1.2vw;
+    font-family: 'Fira Sans';
+}
 .options_menu_options {
     border: 1px solid black;
     margin-top: 2vh;
