@@ -155,6 +155,15 @@ html {
     text-align: left;
     margin-left: 5%;
 }
+.content .icons {
+    font-size: 1.5vw;
+    color: white;
+    margin-left: 5%;
+    display: inline;
+}
+.content .icons:hover {
+    color: gray;
+}
 .content #contact_form {
     display: inline;
     background-image: linear-gradient(gray, #7b58d1 70%);
