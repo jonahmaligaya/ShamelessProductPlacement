@@ -87,6 +87,7 @@ html {
     background: #4c2375;
 }
 .content .investment_information #information {
+    margin-top: 1%;
     margin-left: 1vw;
     background: #7335b1;
     border-radius: 7px;
