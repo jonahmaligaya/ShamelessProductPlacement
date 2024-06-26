@@ -34,7 +34,8 @@ html {
     left: 3%;
     top: 70%;
 }
-.content #sponsor_buy_button {
+.content #sponsor_options_menu_button {
+    height: 60px;
     background: #5E5DF0;
     border-radius: 999px;
     box-shadow: #5E5DF0 0 10px 20px -10px;
@@ -52,7 +53,7 @@ html {
     font-family:'Fira Sans';
     text-decoration: none;
 }
-.content #sponsor_buy_button:hover {
+.content #sponsor_options_menu_button:hover {
     background:#4747b7;
 }
 .content #sponsor_contact_button {
@@ -264,4 +265,31 @@ html {
 }
 .content #contact_form_submit_button:hover {
     background-color: gray;
+}
+.sponsor_options_menu_options {
+    border: 1px solid black;
+    margin-top: 2vh;
+}
+.sponsor_options_menu_images {
+    width: 100%;
+}
+.sponsor_options_menu_titles {
+    font-size: 2vw;
+    font-family: 'Fira Sans';
+}
+.sponsor_options_menu_values {
+    font-size: 1.5vw;
+    font-family: 'Fira Sans';
+}
+.sponsor_options_menu_descriptions {
+    font-size: 1vw;
+    font-family: 'Fira Sans';
+}
+.sponsor_options_menu_benefits_title {
+    font-size: 1vw;
+    font-family: 'Fira Sans';
+}
+.sponsor_options_menu_benefits {
+    font-size: 1vw;
+    font-family: 'Fira Sans';
 }

@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
 body {
     margin: 0;
@@ -22,21 +23,24 @@ html {
 .content #shameless_product_placement_logo {
     width: 15%;
     height: auto;
-    position: absolute;
-    left: 6%;
-    top: 2%;
+    margin-left: 6%;
+    margin-top: 2%;
 }
 .content #shameless_product_placement_logo:hover {
     opacity: 90%;
 }
+.content .head_investment_information {
+    background-image: linear-gradient(black 75%, transparent);
+    height: 115vh;
+}
 .content .main_investment_information {
-    margin-top: 10%;
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
     display: grid;
     align-items: center; 
     grid-template-columns: 60% 35%;
     column-gap: 5%;
-    margin-left: 2%;
-    margin-right: 2%;
     margin-bottom: 4%;
 }
 .content .video {
@@ -48,7 +52,7 @@ html {
     height: 100%;
 }
 .content .investment_information #title {
-    font-size: 7vw;
+    font-size: 2.2vw;
     font-family: 'MuseoModerno';
     color: white;
 }
@@ -82,7 +86,7 @@ html {
 .content .investment_information #options:hover {
     background: #4c2375;
 }
-.content .investment_information #invest {
+.content .investment_information #information {
     margin-left: 1vw;
     background: #7335b1;
     border-radius: 7px;
@@ -100,14 +104,12 @@ html {
     font-family:'Fira Sans';
     text-decoration: none;
 }
-.content .investment_information #invest:hover {
+.content .investment_information #information:hover {
     background: #4c2375;
 }
 .content .extra_investment_information {
     display: block;
     width: 100%;
-    border-top: 1px solid #FFFFFF;
-    background-image: black;
 }
 .content .extra_investment_information #title {
     color: white;
@@ -168,30 +170,164 @@ html {
     font-size: 1.2vw;
     font-family: 'Fira Sans';
 }
-.options_menu_options {
+.content #investor_contact_information {
+    margin-top: 10vh;
+    grid-template-columns: 30% 70%;
+    display: grid;
+    height: 260vh;
+}
+.content #contact_section {
+    display: inline-block;
+    background-image: linear-gradient(black, #7b58d1 70%);
+    font-family: 'Oswald';
+    text-align: center;
+    color: white;
+}
+.content #contact_title {
+    font-size: 5vw;
+}
+.content #contact_secondary_title {
+    font-size: 3vw;
+}
+.content #contact_information {
+    font-size: 1.5vw;
+    text-align: left;
+    margin-left: 5%;
+}
+.content .icons {
+    font-size: 1.5vw;
+    color: white;
+    margin-left: 5%;
+    display: inline;
+}
+.content .icons:hover {
+    color: gray;
+}
+.content #contact_form {
+    display: inline;
+    background-image: linear-gradient(gray, #7b58d1 70%);
+    text-align: center;
+    font-family: 'Oswald';
+}
+.content .contact_form_name {
+    width: 45%;
+    display: inline;
+    margin-top: 40px;
+    margin-left: 1%;
+    margin-right: 1%;
+    text-align: center;
+    padding: 10px 0;
+    background: none;
+    border: none;
+    border-bottom: 2px solid black;
+    color: black;
+    font-size: 14px;
+    outline: none;
+    transition: border-color .2s;
+}
+.content .contact_form_name::placeholder {
+    color: black;
+}
+.content #contact_form_email {
+    width: 92.5%;
+    display: inline;
+    margin-top: 20px;
+    margin-left: 1%;
+    margin-right: 1%;
+    text-align: center;
+    padding: 10px 0;
+    background: none;
+    border: none;
+    border-bottom: 2px solid black;
+    color: black;
+    font-size: 14px;
+    outline: none;
+    transition: border-color .2s;
+}
+.content #contact_form_email::placeholder {
+    color: black;
+}
+.content #contact_form_company {
+    width: 92.5%;
+    display: inline;
+    margin-top: 20px;
+    margin-left: 1%;
+    margin-right: 1%;
+    text-align: center;
+    padding: 10px 0;
+    background: none;
+    border: none;
+    border-bottom: 2px solid black;
+    color: black;
+    font-size: 14px;
+    outline: none;
+    transition: border-color .2s;
+}
+.content #contact_form_company::placeholder {
+    color: black;
+}
+.content #contact_form_message {
+    width: 92.5%;
+    height: 100%;
+    display: inline;
+    padding: 10px 10px;
+    background: none;
+    border: 2px solid black;
+    color: black;
+    font-size: 14px;
+    outline: none;
+    transition: border-color .2s;
+    margin-top: 20px;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 3%;
+    resize: none;
+}
+.content #contact_form_message::placeholder {
+    color: black;
+}
+.content #contact_form_submit_button {
+    width: 92.5%;
+    display: inline;
+    padding: 10px 10px;
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+    font-size: 14px;
+    outline: none;
+    transition: border-color .2s;
+    margin-top: 20px;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 3%;
+}
+.content #contact_form_submit_button:hover {
+    background-color: gray;
+}
+.projects_menu_options {
     border: 1px solid black;
     margin-top: 2vh;
 }
-.options_menu_options .options_menu_images {
+.projects_menu_options .projects_menu_images {
     width: 100%;
 }
-.options_menu_options .options_menu_titles {
+.projects_menu_options .projects_menu_titles {
     font-size: 2vw;
     font-family: 'Fira Sans';
 }
-.options_menu_options .options_menu_values {
+.projects_menu_options .projects_menu_values {
     font-size: 1.5vw;
     font-family: 'Fira Sans';
 }
-.options_menu_options .options_menu_descriptions {
+.projects_menu_options .projects_menu_descriptions {
     font-size: 1vw;
     font-family: 'Fira Sans';
 }
-.options_menu_options .options_menu_benefits_title {
+.projects_menu_options .projects_menu_benefits_title {
     font-size: 1vw;
     font-family: 'Fira Sans';
 }
-.options_menu_options .options_menu_benefits {
+.projects_menu_options .projects_menu_benefits {
     font-size: 1vw;
     font-family: 'Fira Sans';
 }

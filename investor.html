@@ -28,19 +28,21 @@
             </div>
         </header>
         <div class="content">
-            <a href="index.html">
-                <img id="shameless_product_placement_logo" src="assets/shameless_product_placement_logo.png" alt="Shameless Product Placement Logo">
-            </a>
-            <div class="main_investment_information">
-                <div class="video">
-                    <iframe id="shih_zoo_investment_video" src="https://www.youtube.com/embed/ScMzIvxBSi4?&theme=dark&autohide=2"frameborder="0"></iframe>
-                </div>
-                <div class="investment_information">
-                    <p id="title">Shih Zoo</p>
-                    <p id="description">A compelling story game featuring a cutesy shih tzu!</p>
-                    <p id="invested">$42 USD from 2 backers</p>
-                    <button id="options" data-toggle="modal" data-target="#options_menu">OPTIONS</button>
-                    <button id="invest">INVEST</button>
+            <div class="head_investment_information">
+                <a href="index.html">
+                    <img id="shameless_product_placement_logo" src="assets/shameless_product_placement_logo.png" alt="Shameless Product Placement Logo">
+                </a>
+                <div class="main_investment_information">
+                    <div class="video">
+                        <iframe id="shih_zoo_investment_video" src="https://www.youtube.com/embed/ScMzIvxBSi4?&theme=dark&autohide=2"frameborder="0"></iframe>
+                    </div>
+                    <div class="investment_information">
+                        <p id="title">Shameless Product Placement</p>
+                        <p id="description">World class gaming meets brand promotion.</p>
+                        <p id="invested">$42 USD from 2 backers</p>
+                        <button id="options" data-toggle="modal" data-target="#projects_menu">PROJECTS TO INVEST IN</button>
+                        <a href="#investor_contact_information"><button id="information">GET INFORMATION</button></a>
+                    </div>
                 </div>
             </div>
             <div class="extra_investment_information">
@@ -71,7 +73,7 @@
                     <p class="questions">Why should I invest in Shameless Product Placement?</p>
                     <p class="answers">Investing in our company allows us to fund our upcoming projects, such as Shih Zoo.</p>
                     <p class="questions">What do I get from investing in Shameless Product Placement?</p>
-                    <p class="answers">You get our endless gratitude no matter how much you invest, but each tier gets you a specific amount of perks, and you can see them by clicking the OPTIONS button at the top of the page!</p>
+                    <p class="answers">You get our endless gratitude no matter how much you invest, but each tier gets you a specific amount of perks, and you can see them by clicking the PROJECTS TO INVEST IN button at the top of the page!</p>
                     <p class="questions">Is there anything I can do to help?</p>
                     <p class="answers">If you have any skills you think you can offer to us, please let us know at info@shamelesspp.com!</p>
                     <p class="questions">Where can I download your apps to try them?</p>
@@ -79,47 +81,85 @@
                     <p class="questions">Where can I ask questions not listed in the FAQ?</p>
                     <p class="answers">You can email us at info@shamelesspp.com.</p>
                 </div>
+                <div class="investor_contact_information" id="investor_contact_information">
+                    <div id="contact_section">
+                        <p id="contact_title">Shameless Communication</p>
+                        <p id="contact_secondary_title">Don't feel shame in reaching out!</p>
+                        <p id="contact_information">
+                            <i class="lni lni-envelope"></i> info@shamelesspp.com<br>
+                            <i class="lni lni-phone"></i> (917) 863-0915<br><br>
+                            <i class="lni lni-pin"></i> 280 South Winooski Avenue<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Burlington, VT 05401
+                        </p>
+                        <a href="#"><p class="icons"><i class="lni lni-twitter"></i></p></a>
+                        <a href="#"><p class="icons"><i class="lni lni-facebook"></i></p></a>
+                        <a href="#"><p class="icons"><i class="lni lni-youtube"></i></p></a>
+                        <a href="#"><p class="icons"><i class="lni lni-linkedin"></i></p></a>
+                    </div>
+                    <div id="contact_form">
+                        <form name="contact_form">
+                            <input class="contact_form_name" type="text" name="contact_form_first_name" id="contact_form_first_name" placeholder="First name (required)" required>
+                            <input class="contact_form_name" type="text" name="contact_form_last_name" id="contact_form_last_name" placeholder="Last name (required)" required>
+                            <input class="contact_form_email" type="text" name="contact_form_email" id="contact_form_email" placeholder="Email (required)" required>
+                            <input class="contact_form_company" type="text" name="contact_form_company" id="contact_form_company" placeholder="Company (if any)">
+                            <textarea class="contact_form_message" name="contact_form_message" id="contact_form_message" rows="10" placeholder="Your message" required></textarea>
+                            <input class="contact_form_submit_button" id="contact_form_submit_button" type="submit" value="Submit"/>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="modal" id="options_menu">  
+        <div class="modal" id="projects_menu">  
             <div class="modal-dialog modal-dialog-scrollable">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h1>Invest in Shih Zoo</h1>
+                        <h1>Invest in Shameless Product Placement!</h1>
                         <button type="button" class="close" data-dismiss="modal">×</button>
                     </div>
                     <div class="modal-body">
-                        <div class="options_menu_options">
-                            <img class="options_menu_images" src="assets/example_image.png" alt="Option 1">
-                            <p class="options_menu_titles">Investor Level 1</p>
-                            <p class="options_menu_values">$Cost of Investor Level 1</p>
-                            <p class="options_menu_descriptions">Thank you for investing in Shameless Product Placement! Any amount helps!</p>
-                            <p class="options_menu_benefits_title">Benefits:</p>
-                            <ul class="options_menu_benefits">
+                        <div class="projects_menu_options">
+                            <img class="projects_menu_images" src="assets/example_image.png" alt="Shih Zoo">
+                            <p class="projects_menu_titles">Invest in Shih Zoo</p>
+                            <p class="projects_menu_values">$</p>
+                            <p class="projects_menu_descriptions">Thank you for investing in Shameless Product Placement! Any amount helps!</p>
+                            <p class="projects_menu_benefits_title">Benefits:</p>
+                            <ul class="projects_menu_benefits">
                                 <li>Our gratitude</li>
                                 <li>Extra perk 1</li>
                                 <li>Extra perk 2</li>
                             </ul>
                         </div>
-                        <div class="options_menu_options">
-                            <img class="options_menu_images" src="assets/example_image.png" alt="Option 2">
-                            <p class="options_menu_titles">Investor Level 2</p>
-                            <p class="options_menu_values">$Cost of Investor Level 2</p>
-                            <p class="options_menu_descriptions">Thank you for investing in Shameless Product Placement! Any amount helps!</p>
-                            <p class="options_menu_benefits_title">Benefits:</p>
-                            <ul class="options_menu_benefits">
+                        <div class="projects_menu_options">
+                            <img class="projects_menu_images" src="assets/example_image.png" alt="Les Dudes">
+                            <p class="projects_menu_titles">Invest in Les Dudes</p>
+                            <p class="projects_menu_values">$</p>
+                            <p class="projects_menu_descriptions">Thank you for investing in Shameless Product Placement! Any amount helps!</p>
+                            <p class="projects_menu_benefits_title">Benefits:</p>
+                            <ul class="projects_menu_benefits">
                                 <li>Our gratitude</li>
                                 <li>Extra perk 1</li>
                                 <li>Extra perk 2</li>
                             </ul>
                         </div>
-                        <div class="options_menu_options">
-                            <img class="options_menu_images" src="assets/example_image.png" alt="Option 2">
-                            <p class="options_menu_titles">Investor Level 3</p>
-                            <p class="options_menu_values">$Cost of Investor Level 3</p>
-                            <p class="options_menu_descriptions">Thank you for investing in Shameless Product Placement! Any amount helps!</p>
-                            <p class="options_menu_benefits_title">Benefits:</p>
-                            <ul class="options_menu_benefits">
+                        <div class="projects_menu_options">
+                            <img class="projects_menu_images" src="assets/example_image.png" alt="Prince's Escape">
+                            <p class="projects_menu_titles">Invest in Prince's Escape</p>
+                            <p class="projects_menu_values">$</p>
+                            <p class="projects_menu_descriptions">Thank you for investing in Shameless Product Placement! Any amount helps!</p>
+                            <p class="projects_menu_benefits_title">Benefits:</p>
+                            <ul class="projects_menu_benefits">
+                                <li>Our gratitude</li>
+                                <li>Extra perk 1</li>
+                                <li>Extra perk 2</li>
+                            </ul>
+                        </div>
+                        <div class="projects_menu_options">
+                            <img class="projects_menu_images" src="assets/example_image.png" alt="SWAG">
+                            <p class="projects_menu_titles">Invest in SWAG</p>
+                            <p class="projects_menu_values">$</p>
+                            <p class="projects_menu_descriptions">Thank you for investing in Shameless Product Placement! Any amount helps!</p>
+                            <p class="projects_menu_benefits_title">Benefits:</p>
+                            <ul class="projects_menu_benefits">
                                 <li>Our gratitude</li>
                                 <li>Extra perk 1</li>
                                 <li>Extra perk 2</li>
