@@ -30,8 +30,8 @@ html {
     opacity: 90%;
 }
 .content .head_investment_information {
-    background-image: linear-gradient(black 75%, transparent);
-    height: 115vh;
+    background-image: linear-gradient(black 85%, transparent);
+    height: 110vh;
 }
 .content .main_investment_information {
     margin-top: 2%;
@@ -41,11 +41,10 @@ html {
     align-items: center; 
     grid-template-columns: 60% 35%;
     column-gap: 5%;
-    margin-bottom: 4%;
 }
 .content .video {
     width: 60vw;
-    height: 60vh;
+    height: 65vh;
 }
 .content .video #shih_zoo_investment_video {
     width: 100%;
