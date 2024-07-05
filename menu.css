@@ -45,7 +45,7 @@
 }
 .menu ul {
     position: absolute;
-    top: -80px;
+    top: -13vh;
     left: 10%;
     list-style-type: none;
     margin: 0;
@@ -63,9 +63,12 @@
     display: block;
     color: white;
     text-align: center;
-    padding: 40px;
-    font-size: 150%;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 30px;
+    font-size: 2vw;
     text-decoration: none;
+    
     font-family: 'Quicksand', sans-serif;
 }
 .menu li a:hover {
