@@ -14,8 +14,11 @@ body {
     align-items: flex-start;
     overflow: visible;
 }
+.hello {
+    font-size: 1vw;
+}
 #background_video {
-    min-height: 260vh;
+    min-height: 100vh;
     max-width: 100%;
     object-fit: fill;
     position: sticky;
@@ -97,6 +100,12 @@ body {
     margin-bottom: 5%;
     text-align: center;
 }
+.content .scrollable_area .description_section {
+    margin-bottom: 10%;
+}
+.content .scrollable_area .team_section {
+    margin-bottom: 10%;
+}
 .content .scrollable_area .team_section .people {
     display: grid;
     grid-template-columns: 40% 58%;
@@ -105,7 +114,7 @@ body {
     margin-right: 2%;
     margin-bottom: 4%;
 }
-.content .scrollable_area .team_section #ceo {
+.content .scrollable_area .team_section .people_images {
     width: 100%;
 }
 .content .scrollable_area .name_titles {
@@ -119,7 +128,69 @@ body {
     font-family: 'Fira Sans';
     color: white;
 }
-.content .scrollable_area .team_section #game_developer {
-    width: 100%;
+.content .scrollable_area .game_section .games_header {
+    display: grid;
+    grid-template-columns: 68% 30%;
+    column-gap: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
     margin-bottom: 4%;
+    align-items: center;
+}
+.content .scrollable_area .game_section hr {
+    color: white;
+    border-color: white;
+    text-align: center;
+    height: 3px;
+    background-color: white;
+    border-width: 1px;
+    border-style: solid;
+    opacity: 100%;
+}
+.content .scrollable_area .game_section .games_titles {
+    color: white;
+    font-size: 3vw;
+    font-family: 'MuseoModerno';
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+.content .scrollable_area .game_section .games_descriptions {
+    color: white;
+    font-size: 1.2vw;
+    font-family: 'MuseoModerno';
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+.content .scrollable_area .game_section .games_buttons {
+    width: 15vw;
+    border-radius: 999px;
+    box-sizing: border-box;
+    background-color: transparent;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 1vw;
+    opacity: 1;
+    outline: 0 solid transparent;
+    padding: 8px 18px;
+    border-style: solid;
+    border-color: white;
+    font-family:'Fira Sans';
+    text-decoration: none;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    transition: 250ms linear;
+}
+.content .scrollable_area .game_section .games_buttons:hover {
+    transition: 250ms linear;
+    border-color: gray;
+    color: gray;
+}
+.content .scrollable_area .game_section .games_logos {
+    width: 100%;
+    transform: scale(0.95);
+    transition: 250ms linear;
+}
+.content .scrollable_area .game_section .games_logos:hover {
+    transform: scale(1.05);
+    transition: 250ms linear;
 }

@@ -68,8 +68,8 @@
     padding-top: 30px;
     font-size: 2vw;
     text-decoration: none;
-    
     font-family: 'Quicksand', sans-serif;
+    transition: color 250ms linear;
 }
 .menu li a:hover {
     color: gray;

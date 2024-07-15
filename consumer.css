@@ -54,13 +54,10 @@ body {
     width: 20%;
     left: 4%;
     bottom: 22%;
+    transition: 250ms linear;
 }
 .content #shih_zoo_logo:hover {
     transform: translate(0px, -10px);
-    transition: 250ms linear;
-}
-.content #shih_zoo_logo:not(:hover) {
-    transform: translate(0px, 10px);
     transition: 250ms linear;
 }
 .content #download_button_apple {
