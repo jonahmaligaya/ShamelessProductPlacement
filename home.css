@@ -14,9 +14,6 @@ body {
     align-items: flex-start;
     overflow: visible;
 }
-.hello {
-    font-size: 1vw;
-}
 #background_video {
     min-height: 100vh;
     max-width: 100%;
@@ -28,6 +25,7 @@ body {
     right: 0;
     bottom: 0;
     z-index: -1;
+    filter: brightness(50%);
 }
 .unscrollable {
     width: 100%;
@@ -43,18 +41,6 @@ body {
     width: 15%;
     right: 2.5%;
     top: 2.5%;
-}
-.content .home_details {
-    color: black;
-    opacity: 100%;
-}
-.content #home_title {
-    color: white;
-    font-family: 'Fira Sans';
-    position: absolute;
-    top: 5%;
-    left: 50%;
-    font-size: 1vw;
 }
 .content #home_text {
     color: white;
