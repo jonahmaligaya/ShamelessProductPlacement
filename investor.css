@@ -81,9 +81,11 @@ html {
     border: 0;
     font-family:'Fira Sans';
     text-decoration: none;
+    transition: 250ms linear;
 }
 .content .investment_information #options:hover {
     background: #4c2375;
+    transition: 250ms linear;
 }
 .content .investment_information #information {
     margin-top: 1%;
@@ -103,9 +105,11 @@ html {
     border: 0;
     font-family:'Fira Sans';
     text-decoration: none;
+    transition: 250ms linear;
 }
 .content .investment_information #information:hover {
     background: #4c2375;
+    transition: 250ms linear;
 }
 .content .extra_investment_information {
     display: block;
