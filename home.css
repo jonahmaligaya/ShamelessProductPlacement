@@ -59,6 +59,11 @@ body {
     top: 95%;
     left: 50%;
     width: 2%;
+    transition: 250ms linear;
+}
+.content #down_arrow:hover {
+    transition: 250ms linear;
+    filter: brightness(75%);
 }
 .content .scrollable_area #story_title {
     color: white;

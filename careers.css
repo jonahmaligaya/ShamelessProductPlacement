@@ -120,7 +120,7 @@ body {
     transition: 250ms linear;
 }
 .content .careers_apply_buttons:hover {
-    color: gray;
+    filter: brightness(75%);
     transition: 250ms linear;
 }
 .content .careers_images {

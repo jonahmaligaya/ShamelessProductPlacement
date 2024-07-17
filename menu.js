@@ -14,6 +14,7 @@ function toggleMenu() {
         menu.classList.add("open");
         menuList.classList.add("open");
         content.classList.add("close");
+        window.scrollTo({top: 0, behavior: 'smooth'});
         
         openMenu = true;
     } else {

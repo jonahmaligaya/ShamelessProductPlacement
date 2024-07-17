@@ -17,16 +17,16 @@ class MagicSlide extends HTMLElement {
     `
     return templateElement
   })()
-  
+
   slot
-  
+
   constructor() {
     super()
     const shadow = this.attachShadow({mode: "open"})
     shadow.appendChild(MagicSlide.template.content.cloneNode(true))
     this.slot = shadow.querySelector("slot")
   }
-  
+
   get duration() {
     const attribute = this.getAttribute("duration")
     return (attribute && parseInt(attribute)) ?? 1000
@@ -40,7 +40,7 @@ class MagicSlide extends HTMLElement {
       setBooleanAttribute(this, "closed", !value)
     })
   }
-  
+
   get busy() {
     return this.getAttribute("busy") !== null
   }
@@ -49,11 +49,11 @@ class MagicSlide extends HTMLElement {
       setBooleanAttribute(this, "busy", value)
     })
   }
-  
+
   get height() {
     return this.slot.offsetHeight
   }
-    
+
   get fullHeight() {
     const {height: styleHeight, display: styleDisplay} = this.slot.style
     this.slot.style = undefined
@@ -62,20 +62,20 @@ class MagicSlide extends HTMLElement {
     this.slot.style.display = styleDisplay
     return height
   }
-    
+
   set height(value) {
     this.slot.style.height = `${value}px`
     this.slot.style.display = value === 0
       ? "none"
       : "block"
   }
-  
+
   connectedCallback() {
     const {show} = this
     this.height = show ? this.fullHeight : 0
     this.percent = show ? 100 : 0
   }
-  
+
   percent = 100
   animationPromise = undefined
   async animate(show) {
@@ -113,7 +113,7 @@ class MagicSlide extends HTMLElement {
     }
     return this.animationPromise
   }
-    
+
   open = async() => this.animate(true)
   close = async() => this.animate(false)
   toggle = async() => this.animate(!this.show)
@@ -132,7 +132,7 @@ class MagicSlide extends HTMLElement {
     this.ignore = false
   }
 }
-  
+
 function cap({value, min, max}) {
   return value < min
     ? min
@@ -140,16 +140,16 @@ function cap({value, min, max}) {
       ? max
       : value
 }
-  
+
 function setBooleanAttribute(element, attribute, value) {
   if (value)
     element.setAttribute(attribute, "")
   else
     element.removeAttribute(attribute)
 }
-  
+
 customElements.define("magic-slide", MagicSlide)
-  
+
 async function magicSlide() {
   const game_designer_extension = document.querySelector("#game_designer_extension")
   document.querySelector("#game_designer").onclick = game_designer_extension.toggle
@@ -168,5 +168,5 @@ async function magicSlide() {
   const marketer_extension = document.querySelector("#marketer_extension")
   document.querySelector("#marketer").onclick = marketer_extension.toggle
 }
-  
+
 magicSlide()

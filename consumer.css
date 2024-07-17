@@ -21,10 +21,22 @@ body {
     width: 20%;
     top: 3%;
     right: 3%;
+    transition: filter 250ms linear;
 }
 .content #shameless_product_placement_logo:hover {
-    opacity: 90%;
-    transition: opacity 250ms linear;
+    filter: brightness(75%);
+    transition: filter 250ms linear;
+}
+.content #shih_zoo_merchandise {
+    position: absolute;
+    width: 8%;
+    top: 2%;
+    left: 14%;
+    transition: filter 250ms linear;
+}
+.content #shih_zoo_merchandise:hover {
+    filter: brightness(75%);
+    transition: filter 250ms linear;
 }
 .content #shih_tzu {
     height: auto;
@@ -66,10 +78,11 @@ body {
     width: 17.5%;
     bottom: 5%;
     left: 5%;
+    transition: filter 250ms linear;
 }
 .content #download_button_apple:hover {
-    opacity: 90%;
-    transition: opacity 250ms linear;
+    filter: brightness(75%);
+    transition: filter 250ms linear;
 }
 .content #les_dudes_coming_soon {
     position: absolute;
@@ -77,8 +90,9 @@ body {
     width: 20%;
     right: 4%;
     bottom: 20%;
+    transition: filter 250ms linear;
 }
 .content #les_dudes_coming_soon:hover {
-    opacity: 90%;
-    transition: opacity 250ms linear;
+    filter: brightness(75%);
+    transition: filter 250ms linear;
 }
