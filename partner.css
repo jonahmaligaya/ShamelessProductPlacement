@@ -29,12 +29,12 @@ html {
 .content #shameless_product_placement_logo:hover {
     opacity: 90%;
 }
-.content #sponsor_buttons {
+.content #partner_buttons {
     position: absolute;
     left: 3%;
     top: 70%;
 }
-.content #sponsor_options_menu_button {
+.content #partner_contact_button {
     height: 60px;
     background: #5E5DF0;
     border-radius: 999px;
@@ -54,51 +54,26 @@ html {
     text-decoration: none;
     transition: 250ms;
 }
-.content #sponsor_options_menu_button:hover {
+.content #partner_contact_button:hover {
     background:#4747b7;
     transition: 250ms;
 }
-.content #sponsor_contact_button {
-    height: 60px;
-    border-color: black;
-    background-color: transparent;
-    border-radius: 999px;
-    box-sizing: border-box;
-    color: black;
-    cursor: pointer;
-    font-size: 3vw;
-    line-height: 24px;
-    opacity: 1;
-    outline: 0 solid transparent;
-    padding: 8px 18px;
-    word-break: break-word;
-    border-style: solid;
-    margin-left: 20px;
-    font-family:'Fira Sans';
-    text-decoration: none;
-    transition: 250ms;
-}
-.content #sponsor_contact_button:hover {
-    background-color: black;
-    color: white;
-    transition: 250ms;
-}
-.content #sponsor_overlay {
+.content #partner_overlay {
     position: absolute;
     top: 80%;
     width: 100%;
     background-image: linear-gradient(transparent, white 10%);
 }
-.content #sponsor_information {
+.content #partner_information {
     margin-top: 20%;
     margin-bottom: 10%;
 }
-.content #sponsor_title {
+.content #partner_title {
     text-align: center;
     font-size: 10vw;
     font-family: 'EB Garamond';
 }
-.content .sponsor_information_part_1 {
+.content .partner_information_part_1 {
     display: grid;
     align-items: center; 
     grid-template-columns: 60% 40%;
@@ -107,17 +82,17 @@ html {
     margin-right: 2%;
 
 }
-.content #sponsor_details_part_1 {
+.content #partner_details_part_1 {
     font-size: 1.5vw;
     margin-right: 20px;
     font-family: 'EB Garamond';
     display: inline-block;
 }
-.content #sponsor_example_1 {
+.content #partner_example_1 {
     display: inline-block;
     width: 100%;
 }
-.content .sponsor_information_part_2 {
+.content .partner_information_part_2 {
     margin-top: 20px;
     display: grid;
     align-items: center; 
@@ -126,41 +101,41 @@ html {
     margin-left: 2%;
     margin-right: 2%;
 }
-.content #sponsor_details_part_2 {
+.content #partner_details_part_2 {
     font-size: 1.5vw;
     margin-left: 10px;
     margin-right: 20px;
     font-family: 'EB Garamond';
     display: inline-block;
 }
-.content #sponsor_example_2 {
+.content #partner_example_2 {
     display: inline-block;
     width: 100%;
 }
-.sponsor_options_menu_options {
+.partner_options_menu_options {
     border: 1px solid black;
     margin-top: 2vh;
 }
-.sponsor_options_menu_images {
+.partner_options_menu_images {
     width: 100%;
 }
-.sponsor_options_menu_titles {
+.partner_options_menu_titles {
     font-size: 2vw;
     font-family: 'Fira Sans';
 }
-.sponsor_options_menu_values {
+.partner_options_menu_values {
     font-size: 1.5vw;
     font-family: 'Fira Sans';
 }
-.sponsor_options_menu_descriptions {
+.partner_options_menu_descriptions {
     font-size: 1vw;
     font-family: 'Fira Sans';
 }
-.sponsor_options_menu_benefits_title {
+.partner_options_menu_benefits_title {
     font-size: 1vw;
     font-family: 'Fira Sans';
 }
-.sponsor_options_menu_benefits {
+.partner_options_menu_benefits {
     font-size: 1vw;
     font-family: 'Fira Sans';
 }
