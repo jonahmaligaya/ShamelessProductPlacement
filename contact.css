@@ -34,17 +34,20 @@ html{
     text-align: left;
     margin-left: 5%;
 }
+.content .icons_section {
+    text-align: center;
+}
 .content .icons {
     font-size: 1.5vw;
     color: white;
     margin-left: 5%;
     display: inline;
-    text-align: left;
+    text-align: center;
     transition: 250ms linear;
 }
 .content .icons:hover {
-    color: gray;
-    transition: color 250ms linear;
+    filter: brightness(50%);
+    transition: 250ms linear;
 }
 .content #contact_form {
     display: inline;

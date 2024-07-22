@@ -69,6 +69,6 @@
     transition: 250ms linear;
 }
 .menu li a:hover {
-    filter: brightness(75%);
+    filter: brightness(50%);
     transition: 250ms linear;
 }

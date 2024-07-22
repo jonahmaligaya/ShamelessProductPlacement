@@ -25,14 +25,16 @@ html {
     position: absolute;
     left: 30%;
     top: 25%;
+    transition: 250ms linear;
 }
 .content #shameless_product_placement_logo:hover {
-    opacity: 90%;
+    filter: brightness(75%);
+    transition: 250ms linear;
 }
 .content #sponsor_buttons {
     position: absolute;
     left: 3%;
-    top: 70%;
+    top: 50%;
 }
 .content #sponsor_options_menu_button {
     height: 60px;
@@ -87,7 +89,7 @@ html {
     position: absolute;
     top: 80%;
     width: 100%;
-    background-image: linear-gradient(transparent, white 10%);
+    background-image: linear-gradient(transparent, white 20%);
 }
 .content #sponsor_information {
     margin-top: 20%;

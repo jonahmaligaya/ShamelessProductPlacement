@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
 body {
-    background-image: url('assets/sponsor_background.gif');
+    background-image: url('assets/partner_background.gif');
     margin: 0;
     padding: 0;
 }
@@ -25,14 +25,16 @@ html {
     position: absolute;
     left: 30%;
     top: 25%;
+    transition: 250ms linear;
 }
 .content #shameless_product_placement_logo:hover {
-    opacity: 90%;
+    filter: brightness(75%);
+    transition: 250ms linear;
 }
 .content #partner_buttons {
     position: absolute;
     left: 3%;
-    top: 70%;
+    top: 50%;
 }
 .content #partner_contact_button {
     height: 60px;

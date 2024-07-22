@@ -39,6 +39,11 @@ body {
     width: 15%;
     right: 2.5%;
     top: 2.5%;
+    transition: 250ms linear;
+}
+.content #shameless_product_placement_logo:hover {
+    filter: brightness(75%);
+    transition: 250ms linear;
 }
 .content #careers_text {
     color: white;
@@ -67,7 +72,7 @@ body {
     transition: 250ms linear;
 }
 .content .careers_buttons:hover {
-    color: gray;
+    filter: brightness(50%);
     transition: 250ms linear;
 }
 .content .careers_extensions {
