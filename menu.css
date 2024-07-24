@@ -15,6 +15,10 @@
     background: white;
     transition: all 0.5s ease-out;
 }
+.menu_button_blur {
+    filter: blur(7px);
+    pointer-events: none;
+}
 .menu_button.close {
     transform: rotate(180deg);
 }

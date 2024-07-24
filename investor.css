@@ -151,6 +151,10 @@ html {
     display: grid;
     height: 260vh;
 }
+#projects_menu #projects_menu_close_button {
+    border: none;
+    background-color: white;
+}
 .projects_menu_options {
     border: 1px solid black;
     margin-top: 2vh;

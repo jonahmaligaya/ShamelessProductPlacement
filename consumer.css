@@ -1,4 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 body {
     background-image: url('assets/consumer_background.jpg');
     width: 100%;
@@ -6,6 +8,15 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
+}
+.blur {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    filter: blur(7px);
+    pointer-events: none;
 }
 .content.close {
     transition: all 0.4s ease-in;
@@ -22,11 +33,11 @@ body {
     width: 20%;
     top: 3%;
     right: 3%;
-    transition: filter 250ms linear;
+    transition: 250ms linear;
 }
 .content #shameless_product_placement_logo:hover {
     filter: brightness(75%);
-    transition: filter 250ms linear;
+    transition: 250ms linear;
 }
 .content #shih_zoo_merchandise {
     position: absolute;
@@ -44,8 +55,11 @@ body {
     width: 0.7%;
     opacity: 0;
     position: absolute;
-    left: 50%;
-    top: 50%;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
     animation: scale 3s ease-out;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -67,11 +81,11 @@ body {
     width: 20%;
     left: 4%;
     bottom: 22%;
-    transition: 250ms linear;
+    transition: 250ms transform linear;
 }
 .content #shih_zoo_logo:hover {
     transform: translate(0px, -10px);
-    transition: 250ms linear;
+    transition: 250ms transform linear;
 }
 .content #shih_zoo_download_button {
     height: 60px;
@@ -82,7 +96,7 @@ body {
     transition: 250ms linear;
     border-color: black;
     background-color: white;
-    border-radius: 999px;
+    border-radius: 10px;
     box-sizing: border-box;
     color: black;
     cursor: pointer;
@@ -96,10 +110,10 @@ body {
     font-family:'Fira Sans';
     text-decoration: none;
     filter: drop-shadow(0 5px);
-    transition: 250ms;
+    transition: transform filter 250ms;
 }
 .content #shih_zoo_download_button:hover {
-    transition: 250ms linear;
+    transition: transform filter 250ms linear;
     transform: translate(0px, 5px);
     filter: drop-shadow(0 0);
 }
@@ -114,4 +128,84 @@ body {
 .content #les_dudes_coming_soon:hover {
     filter: brightness(75%);
     transition: filter 250ms linear;
+}
+.content #shih_zoo_download_popup {
+    visibility: hidden;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    height: 70%;
+    background-color: white;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+.content #shih_zoo_download_popup.open_popup {
+    visibility: visible;
+}
+.content #shih_zoo_download_popup #shih_zoo_download_popup_close {
+    float: right;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 2%;
+}
+.content #shih_zoo_download_popup #shih_zoo_download_popup_close #shih_zoo_download_popup_close_button {
+    background-color: white;
+    border: none;
+}
+.content #shih_zoo_download_popup #shih_zoo_download_popup_header {
+    display: grid;
+    grid-template-columns: 20% 79%;
+    column-gap: 1%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 2%;
+}
+.content #shih_zoo_download_popup #shih_zoo_download_popup_header #shih_zoo_app_logo {
+    width: 90%;
+    text-align: center;
+}
+.content #shih_zoo_download_popup #shih_zoo_download_popup_header #shih_zoo_download_title {
+    font-family: 'MuseoModerno';
+    font-size: 3vw;
+    color: black;
+}
+.content #shih_zoo_download_popup #shih_zoo_download_popup_header #shih_zoo_download_text {
+    font-family: 'Fira Sans';
+    font-size: 1.25vw;
+    color: black;
+}
+.content #shih_zoo_download_popup #shih_zoo_download_popup_separator {
+    text-align: center;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.content #shih_zoo_download_popup #shih_zoo_download_available_text {
+    font-family: 'Fira Sans';
+    font-size: 2vw;
+    color: black;
+    text-align: center;
+}
+.content #shih_zoo_download_popup #shih_zoo_download_button_section {
+    text-align: center;
+}
+.content #shih_zoo_download_popup #shih_zoo_download_button_section .shih_zoo_download_button_links {
+    text-decoration: none;
+    padding: 2%;
+}
+.content #shih_zoo_download_popup #shih_zoo_download_button_section .shih_zoo_download_buttons {
+    width: 12vw;
+    transition: 250ms linear;
+}
+.content #shih_zoo_download_popup #shih_zoo_download_button_section .shih_zoo_download_buttons:hover {
+    transition: 250ms linear;
+    transform: scale(1.1);
 }

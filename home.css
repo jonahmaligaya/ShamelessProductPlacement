@@ -191,4 +191,5 @@ body {
 .content .scrollable_area .game_section .games_logos:hover {
     transform: scale(1.05);
     transition: 250ms linear;
+    padding: none;
 }

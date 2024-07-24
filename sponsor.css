@@ -139,6 +139,10 @@ html {
     display: inline-block;
     width: 100%;
 }
+#sponsor_options_menu #sponsor_options_menu_close_button {
+    border: none;
+    background-color: white;
+}
 .sponsor_options_menu_options {
     border: 1px solid black;
     margin-top: 2vh;
