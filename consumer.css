@@ -168,6 +168,86 @@ body {
     transition: 250ms linear;
     filter: brightness(50%);
 }
+.content #shih_zoo_download_popup {
+    visibility: hidden;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 90%;
+    height: 70%;
+    background-color: white;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+.content #shih_zoo_download_popup.open_popup {
+    visibility: visible;
+}
+.content #shih_zoo_download_popup #shih_zoo_download_popup_close {
+    float: right;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 2%;
+}
+.content #shih_zoo_download_popup #shih_zoo_download_popup_close #shih_zoo_download_popup_close_button {
+    background-color: white;
+    border: none;
+}
+.content #shih_zoo_download_popup #shih_zoo_download_popup_header {
+    display: grid;
+    grid-template-columns: 19% 80%;
+    column-gap: 1%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 2%;
+}
+.content #shih_zoo_download_popup #shih_zoo_download_popup_header #shih_zoo_app_logo {
+    width: 100%;
+    text-align: center;
+}
+.content #shih_zoo_download_popup #shih_zoo_download_popup_header #shih_zoo_download_title {
+    font-family: 'MuseoModerno';
+    font-size: 4vw;
+    color: black;
+}
+.content #shih_zoo_download_popup #shih_zoo_download_popup_header #shih_zoo_download_text {
+    font-family: 'Fira Sans';
+    font-size: 1.25vw;
+    color: black;
+}
+.content #shih_zoo_download_popup #shih_zoo_download_popup_separator {
+    text-align: center;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.content #shih_zoo_download_popup #shih_zoo_download_available_text {
+    font-family: 'Fira Sans';
+    font-size: 2vw;
+    color: black;
+    text-align: center;
+}
+.content #shih_zoo_download_popup #shih_zoo_download_button_section {
+    text-align: center;
+}
+.content #shih_zoo_download_popup #shih_zoo_download_button_section .shih_zoo_download_button_links {
+    text-decoration: none;
+    padding: 2%;
+}
+.content #shih_zoo_download_popup #shih_zoo_download_button_section .shih_zoo_download_buttons {
+    width: 20vw;
+    transition: 250ms linear;
+}
+.content #shih_zoo_download_popup #shih_zoo_download_button_section .shih_zoo_download_buttons:hover {
+    transition: 250ms linear;
+    transform: scale(1.1);
+}
 @media only screen and (max-device-width: 1024px) {
     .content .scrolling_area {
         white-space: nowrap;
@@ -327,84 +407,4 @@ body {
         border-radius: 10px;
         -webkit-border-radius: 10px;
     }
-}
-.content #shih_zoo_download_popup {
-    visibility: hidden;
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    position: absolute;
-    margin: auto;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    width: 90%;
-    height: 70%;
-    background-color: white;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-}
-.content #shih_zoo_download_popup.open_popup {
-    visibility: visible;
-}
-.content #shih_zoo_download_popup #shih_zoo_download_popup_close {
-    float: right;
-    margin-left: 2%;
-    margin-right: 2%;
-    margin-top: 2%;
-}
-.content #shih_zoo_download_popup #shih_zoo_download_popup_close #shih_zoo_download_popup_close_button {
-    background-color: white;
-    border: none;
-}
-.content #shih_zoo_download_popup #shih_zoo_download_popup_header {
-    display: grid;
-    grid-template-columns: 19% 80%;
-    column-gap: 1%;
-    margin-left: 2%;
-    margin-right: 2%;
-    margin-top: 2%;
-}
-.content #shih_zoo_download_popup #shih_zoo_download_popup_header #shih_zoo_app_logo {
-    width: 100%;
-    text-align: center;
-}
-.content #shih_zoo_download_popup #shih_zoo_download_popup_header #shih_zoo_download_title {
-    font-family: 'MuseoModerno';
-    font-size: 4vw;
-    color: black;
-}
-.content #shih_zoo_download_popup #shih_zoo_download_popup_header #shih_zoo_download_text {
-    font-family: 'Fira Sans';
-    font-size: 1.25vw;
-    color: black;
-}
-.content #shih_zoo_download_popup #shih_zoo_download_popup_separator {
-    text-align: center;
-    margin-left: 2%;
-    margin-right: 2%;
-}
-.content #shih_zoo_download_popup #shih_zoo_download_available_text {
-    font-family: 'Fira Sans';
-    font-size: 2vw;
-    color: black;
-    text-align: center;
-}
-.content #shih_zoo_download_popup #shih_zoo_download_button_section {
-    text-align: center;
-}
-.content #shih_zoo_download_popup #shih_zoo_download_button_section .shih_zoo_download_button_links {
-    text-decoration: none;
-    padding: 2%;
-}
-.content #shih_zoo_download_popup #shih_zoo_download_button_section .shih_zoo_download_buttons {
-    width: 20vw;
-    transition: 250ms linear;
-}
-.content #shih_zoo_download_popup #shih_zoo_download_button_section .shih_zoo_download_buttons:hover {
-    transition: 250ms linear;
-    transform: scale(1.1);
 }

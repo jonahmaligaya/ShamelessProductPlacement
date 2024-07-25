@@ -23,20 +23,24 @@ html {
 .content #shameless_product_placement_logo {
     width: 15%;
     height: auto;
-    margin-left: 6%;
-    margin-top: 2%;
+    position: absolute;
+    right: 2%;
+    top: 2%;
+    transition: 250ms linear;
 }
 .content #shameless_product_placement_logo:hover {
-    opacity: 90%;
+    filter: brightness(75%);
+    transition: 250ms linear;
 }
 .content .head_investment_information {
     background-image: linear-gradient(black 85%, transparent);
     height: 110vh;
 }
 .content .main_investment_information {
-    margin-top: 2%;
+    padding-top: 7.5%;
     margin-left: 2%;
     margin-right: 2%;
+    margin-bottom: 7%;
     display: grid;
     align-items: center; 
     grid-template-columns: 60% 35%;
@@ -44,9 +48,9 @@ html {
 }
 .content .video {
     width: 100%;
-    height: 50vh;
+    height: 70vh;
 }
-.content .video #shih_zoo_investment_video {
+.content .video #investment_video {
     width: 100%;
     height: 100%;
 }
@@ -66,50 +70,67 @@ html {
     color: white;
 }
 .content .investment_information #options {
-    background: #7335b1;
-    border-radius: 7px;
-    box-shadow: #7335b1 0 10px 20px -10px;
-    box-sizing: border-box;
-    color: #FFFFFF;
-    cursor: pointer;
+    transition: 250ms linear;
+    border-color: white;
+    background-color: #7335b1;
+    color: white;
     font-size: 1vw;
-    line-height: 24px;
-    opacity: 1;
+    border-radius: 7px;
+    box-sizing: border-box;
+    cursor: pointer;
     outline: 0 solid transparent;
-    padding: 8px 18px;
+    padding: 1%;
     word-break: break-word;
-    border: 0;
+    border-style: solid;
     font-family:'Fira Sans';
     text-decoration: none;
-    transition: 250ms linear;
+    filter: drop-shadow(0 5px);
 }
 .content .investment_information #options:hover {
     background: #4c2375;
+    filter: drop-shadow(0 0);
+    transform: translate(0px, 5px);
     transition: 250ms linear;
 }
 .content .investment_information #information {
     margin-top: 1%;
-    margin-left: 1vw;
-    background: #7335b1;
-    border-radius: 7px;
-    box-shadow: #7335b1 0 10px 20px -10px;
-    box-sizing: border-box;
-    color: #FFFFFF;
-    cursor: pointer;
+    margin-left: 1%;
+    transition: 250ms linear;
+    border-color: white;
+    background-color: #7335b1;
+    color: white;
     font-size: 1vw;
-    line-height: 24px;
-    opacity: 1;
+    border-radius: 7px;
+    box-sizing: border-box;
+    cursor: pointer;
     outline: 0 solid transparent;
-    padding: 8px 18px;
+    padding: 1%;
     word-break: break-word;
-    border: 0;
+    border-style: solid;
     font-family:'Fira Sans';
     text-decoration: none;
-    transition: 250ms linear;
+    filter: drop-shadow(0 5px);
 }
 .content .investment_information #information:hover {
     background: #4c2375;
+    filter: drop-shadow(0 0);
+    transform: translate(0px, 5px);
     transition: 250ms linear;
+}
+.content .investment_information .investor_social_media {
+    margin-top: 3%;
+}
+.content .investment_information .investor_social_media .investor_social_media_icons {
+    display: inline;
+    color: white;
+    font-size: 2vw;
+    text-decoration: none;
+    margin-right: 4%;
+    transition: 250ms linear;
+}
+.content .investment_information .investor_social_media .investor_social_media_icons:hover {
+    transition: 250ms linear;
+    filter: brightness(50%);
 }
 .content .extra_investment_information {
     display: block;
@@ -119,37 +140,53 @@ html {
     color: white;
     font-size: 4vw;
     font-family: 'MuseoModerno';
+    text-align: center;
     margin-left: 1vw;
     margin-right: 1vw;
-    text-align: center;
 }
-.content .extra_investment_information .name_titles {
-    font-size: 4vw;
+.content .extra_investment_information .extra_investment_subtitles {
+    font-size: 3vw;
     font-family: 'Fira Sans';
     color: white;
-    text-align: center;
-}
-.content .extra_investment_information .faq_section {
-    margin-left: 5vw;
-    margin-right: 5vw;
-    padding-bottom: 5vh;
-}
-.content .extra_investment_information .faq_section .questions {
+    text-align: left;
+    margin-left: 2vw;
+    margin-right: 2vw;
     font-weight: bold;
-    text-decoration: underline;
-    color: white;
-    font-size: 1.3vw;
-    font-family: 'Fira Sans';
 }
-.content .extra_investment_information .faq_section .answers {
-    color: white;
-    font-size: 1.2vw;
+.content .extra_investment_information .extra_investment_text {
+    font-size: 2vw;
     font-family: 'Fira Sans';
+    color: white;
+    text-align: center;
+    margin-bottom: 4%;
+    margin-left: 1vw;
+    margin-right: 1vw;
 }
-.content #investor_contact_information {
-    grid-template-columns: 30% 70%;
-    display: grid;
-    height: 260vh;
+.content .extra_investment_information .learn_more_button_section {
+    text-align: center;
+    padding-bottom: 5%;
+}
+.content .extra_investment_information .learn_more_button_section #learn_more_button {
+    transition: 250ms linear;
+    border-color: black;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-size: 4vw;
+    outline: 0 solid transparent;
+    padding: 1%;
+    word-break: break-word;
+    border-style: solid;
+    font-family:'Fira Sans';
+    text-decoration: none;
+    filter: drop-shadow(0 5px);
+}
+.content .extra_investment_information .learn_more_button_section #learn_more_button:hover {
+    transition: 250ms linear;
+    transform: translate(0px, 5px);
+    filter: drop-shadow(0 0);
 }
 #projects_menu #projects_menu_close_button {
     border: none;
@@ -181,4 +218,205 @@ html {
 .projects_menu_options .projects_menu_benefits {
     font-size: 1vw;
     font-family: 'Fira Sans';
+}
+@media only screen and (max-device-width: 1024px) {
+    .content #shameless_product_placement_logo {
+        width: 40%;
+        height: auto;
+        position: absolute;
+        right: 3%;
+        top: 3%;
+        transition: 250ms linear;
+    }
+    .content #shameless_product_placement_logo:hover {
+        filter: brightness(75%);
+        transition: 250ms linear;
+    }
+    .content .head_investment_information {
+        background-image: linear-gradient(black 85%, transparent);
+        height: 110vh;
+    }
+    .content .main_investment_information {
+        padding-top: 30%;
+        margin-left: 2%;
+        margin-right: 2%;
+        margin-bottom: 7%;
+        display: block;
+        align-items: center; 
+    }
+    .content .video {
+        width: 100%;
+        height: 25vh;
+        margin-bottom: 4%;
+    }
+    .content .video #investment_video {
+        width: 100%;
+        height: 100%;
+    }
+    .content .investment_information #title {
+        font-size: 6vw;
+        font-family: 'MuseoModerno';
+        color: white;
+    }
+    .content .investment_information #description {
+        font-size: 4vw;
+        font-family: 'Fira Sans';
+        color: gray;
+    }
+    .content .investment_information #invested {
+        font-size: 3vw;
+        font-family: 'Fira Sans';
+        color: white;
+    }
+    .content .investment_information #options {
+        transition: 250ms linear;
+        border-color: white;
+        background-color: #7335b1;
+        color: white;
+        font-size: 4.5vw;
+        border-radius: 7px;
+        box-sizing: border-box;
+        cursor: pointer;
+        outline: 0 solid transparent;
+        padding: 1%;
+        word-break: break-word;
+        border-style: solid;
+        font-family:'Fira Sans';
+        text-decoration: none;
+        filter: drop-shadow(0 5px);
+    }
+    .content .investment_information #options:hover {
+        background: #4c2375;
+        filter: drop-shadow(0 0);
+        transform: translate(0px, 5px);
+        transition: 250ms linear;
+    }
+    .content .investment_information #information {
+        margin-top: 1%;
+        margin-left: 1%;
+        transition: 250ms linear;
+        border-color: white;
+        background-color: #7335b1;
+        color: white;
+        font-size: 4.5vw;
+        border-radius: 7px;
+        box-sizing: border-box;
+        cursor: pointer;
+        outline: 0 solid transparent;
+        padding: 1%;
+        word-break: break-word;
+        border-style: solid;
+        font-family:'Fira Sans';
+        text-decoration: none;
+        filter: drop-shadow(0 5px);
+    }
+    .content .investment_information #information:hover {
+        background: #4c2375;
+        filter: drop-shadow(0 0);
+        transform: translate(0px, 5px);
+        transition: 250ms linear;
+    }
+    .content .investment_information .investor_social_media {
+        margin-top: 3%;
+        text-align: center;
+    }
+    .content .investment_information .investor_social_media .investor_social_media_icons {
+        display: inline;
+        color: white;
+        font-size: 7vw;
+        text-decoration: none;
+        margin: 2%;
+        transition: 250ms linear;
+    }
+    .content .investment_information .investor_social_media .investor_social_media_icons:hover {
+        transition: 250ms linear;
+        filter: brightness(50%);
+    }
+    .content .extra_investment_information {
+        display: block;
+        width: 100%;
+    }
+    .content .extra_investment_information .section_titles {
+        color: white;
+        font-size: 8vw;
+        font-family: 'MuseoModerno';
+        text-align: center;
+        margin-left: 1vw;
+        margin-right: 1vw;
+    }
+    .content .extra_investment_information .extra_investment_subtitles {
+        font-size: 6vw;
+        font-family: 'Fira Sans';
+        color: white;
+        text-align: left;
+        margin-left: 2vw;
+        margin-right: 2vw;
+        font-weight: bold;
+    }
+    .content .extra_investment_information .extra_investment_text {
+        font-size: 4vw;
+        font-family: 'Fira Sans';
+        color: white;
+        text-align: center;
+        margin-bottom: 4%;
+        margin-left: 1vw;
+        margin-right: 1vw;
+    }
+    .content .extra_investment_information .learn_more_button_section {
+        text-align: center;
+        padding-bottom: 5%;
+    }
+    .content .extra_investment_information .learn_more_button_section #learn_more_button {
+        transition: 250ms linear;
+        border-color: black;
+        background-color: white;
+        color: black;
+        border-radius: 10px;
+        box-sizing: border-box;
+        cursor: pointer;
+        font-size: 9vw;
+        outline: 0 solid transparent;
+        padding: 1%;
+        word-break: break-word;
+        border-style: solid;
+        font-family:'Fira Sans';
+        text-decoration: none;
+        filter: drop-shadow(0 5px);
+    }
+    .content .extra_investment_information .learn_more_button_section #learn_more_button:hover {
+        transition: 250ms linear;
+        transform: translate(0px, 5px);
+        filter: drop-shadow(0 0);
+    }
+    #projects_menu #projects_menu_close_button {
+        border: none;
+        background-color: white;
+    }
+    .projects_menu_options {
+        border: 1px solid black;
+        margin-top: 2vh;
+    }
+    .projects_menu_options .projects_menu_images {
+        width: 100%;
+    }
+    .projects_menu_options .projects_menu_titles {
+        font-size: 7vw;
+        font-family: 'Fira Sans';
+    }
+    .projects_menu_options .projects_menu_values {
+        font-size: 5vw;
+        font-family: 'Fira Sans';
+    }
+    .projects_menu_options .projects_menu_descriptions {
+        font-size: 4vw;
+        font-family: 'Fira Sans';
+    }
+    .projects_menu_options .projects_menu_benefits_title {
+        font-size: 4vw;
+        font-family: 'Fira Sans';
+    }
+    .projects_menu_options .projects_menu_benefits {
+        font-size: 4vw;
+        font-family: 'Fira Sans';
+    }
 }
