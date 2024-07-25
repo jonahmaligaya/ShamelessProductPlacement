@@ -61,10 +61,13 @@ body {
 }
 .content #down_arrow {
     position: absolute;
-    top: 95%;
-    left: 50%;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 1%;
     width: 2%;
     transition: 250ms linear;
+    
 }
 .content #down_arrow:hover {
     transition: 250ms linear;
@@ -98,6 +101,29 @@ body {
 }
 .content .scrollable_area .description_section {
     margin-bottom: 10%;
+}
+.content .scrollable_area .serve_section {
+    margin-bottom: 10%;
+}
+.content .scrollable_area .serve_section .serve {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    text-align: center;
+}
+.content .scrollable_area .serve_section .serve .serve_buttons {
+    color: white;
+    font-size: 3vw;
+    font-family: 'Fira Sans';
+    margin-left: 1vw;
+    margin-right: 1vw;
+    text-align: center;
+    transition: 250ms linear;
+    border: none;
+    background-color: transparent;
+}
+.content .scrollable_area .serve_section .serve .serve_buttons:hover {
+    filter: brightness(50%);
+    transition: 250ms linear;
 }
 .content .scrollable_area .team_section {
     margin-bottom: 10%;

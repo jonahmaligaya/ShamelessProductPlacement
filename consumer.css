@@ -129,6 +129,27 @@ body {
     filter: brightness(75%);
     transition: filter 250ms linear;
 }
+@media only screen and (max-width: 992px) {
+    .content #shih_zoo_download_popup {
+        visibility: hidden;
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        position: absolute;
+        margin: auto;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 80%;
+        height: 40%;
+        background-color: white;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+    }
+}
 .content #shih_zoo_download_popup {
     visibility: hidden;
     position: absolute;
@@ -142,7 +163,7 @@ body {
     right: 0;
     top: 0;
     bottom: 0;
-    width: 100%;
+    width: 90%;
     height: 70%;
     background-color: white;
     border-radius: 10px;
