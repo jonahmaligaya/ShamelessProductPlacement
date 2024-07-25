@@ -19,12 +19,31 @@ html {
     transition: all 0.4s ease-in;
     visibility: hidden;
 }
+.content .sponsor_social_media {
+    position: absolute;
+    top: 1%;
+    right: 1%;
+}
+.content .sponsor_social_media_icons {
+    display: inline;
+    color: white;
+    font-size: 3vw;
+    text-decoration: none;
+    transition: 250ms linear;
+}
+.content .sponsor_social_media_icons:hover {
+    transition: 250ms linear;
+    filter: brightness(50%);
+}
 .content #shameless_product_placement_logo {
     width: 55%;
     height: auto;
     position: absolute;
-    left: 30%;
-    top: 25%;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
     transition: 250ms linear;
 }
 .content #shameless_product_placement_logo:hover {
@@ -62,11 +81,11 @@ html {
 }
 .content #sponsor_contact_button {
     height: 60px;
-    border-color: black;
+    border-color: white;
     background-color: transparent;
     border-radius: 999px;
     box-sizing: border-box;
-    color: black;
+    color: white;
     cursor: pointer;
     font-size: 3vw;
     line-height: 24px;
@@ -75,21 +94,22 @@ html {
     padding: 8px 18px;
     word-break: break-word;
     border-style: solid;
-    margin-left: 20px;
+    margin-left: 10px;
     font-family:'Fira Sans';
     text-decoration: none;
     transition: 250ms;
 }
 .content #sponsor_contact_button:hover {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     transition: 250ms;
 }
 .content #sponsor_overlay {
     position: absolute;
     top: 80%;
     width: 100%;
-    background-image: linear-gradient(transparent, white 20%);
+    background-image: linear-gradient(transparent, white 15%);
+    height: 200vh;
 }
 .content #sponsor_information {
     margin-top: 20%;
@@ -97,7 +117,7 @@ html {
 }
 .content #sponsor_title {
     text-align: center;
-    font-size: 10vw;
+    font-size: 6.5vw;
     font-family: 'EB Garamond';
 }
 .content .sponsor_information_part_1 {
@@ -135,6 +155,11 @@ html {
     font-family: 'EB Garamond';
     display: inline-block;
 }
+.content #free_trial_redirect {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
 .content #sponsor_example_2 {
     display: inline-block;
     width: 100%;
@@ -169,4 +194,176 @@ html {
 .sponsor_options_menu_benefits {
     font-size: 1vw;
     font-family: 'Fira Sans';
+}
+@media only screen and (max-device-width: 1024px) {
+    .content .sponsor_social_media {
+        position: absolute;
+        top: 3%;
+        right: 3%;
+    }
+    .content .sponsor_social_media_icons {
+        display: inline;
+        color: white;
+        font-size: 7vw;
+        text-decoration: none;
+        transition: 250ms linear;
+    }
+    .content .sponsor_social_media_icons:hover {
+        transition: 250ms linear;
+        filter: brightness(50%);
+    }
+    .content #shameless_product_placement_logo {
+        width: 90%;
+        height: auto;
+        position: absolute;
+        margin: auto;
+        left: 0;
+        right: 0;
+        bottom: 50%;
+        transition: 250ms linear;
+    }
+    .content #shameless_product_placement_logo:hover {
+        filter: brightness(75%);
+        transition: 250ms linear;
+    }
+    .content #sponsor_buttons {
+        position: absolute;
+        top: 40%;
+    }
+    .content #sponsor_options_menu_button {
+        height: 60px;
+        background: #5E5DF0;
+        border-radius: 999px;
+        box-shadow: #5E5DF0 0 10px 20px -10px;
+        box-sizing: border-box;
+        color: #FFFFFF;
+        cursor: pointer;
+        font-size: 3vw;
+        line-height: 24px;
+        opacity: 1;
+        outline: 0 solid transparent;
+        padding: 8px 18px;
+        word-break: break-word;
+        border: 0;
+        margin-left: 10vw;
+        font-family:'Fira Sans';
+        text-decoration: none;
+        transition: 250ms;
+    }
+    .content #sponsor_options_menu_button:hover {
+        background:#4747b7;
+        transition: 250ms;
+    }
+    .content #sponsor_contact_button {
+        height: 60px;
+        border-color: white;
+        background-color: transparent;
+        border-radius: 999px;
+        box-sizing: border-box;
+        color: white;
+        cursor: pointer;
+        font-size: 3vw;
+        line-height: 24px;
+        opacity: 1;
+        outline: 0 solid transparent;
+        padding: 8px 18px;
+        word-break: break-word;
+        border-style: solid;
+        margin-left: 10px;
+        font-family:'Fira Sans';
+        text-decoration: none;
+        transition: 250ms;
+    }
+    .content #sponsor_contact_button:hover {
+        background-color: white;
+        color: black;
+        transition: 250ms;
+    }
+    .content #sponsor_overlay {
+        position: absolute;
+        top: 60%;
+        width: 100%;
+        background-image: linear-gradient(transparent, white 20%);
+        height: 200vh;
+    }
+    .content #sponsor_information {
+        margin-top: 20%;
+        margin-bottom: 10%;
+        margin-left: 2%;
+        margin-right: 2%;
+        text-align: center;
+    }
+    .content #sponsor_title {
+        margin-top: 60%;
+        text-align: center;
+        font-size: 9.5vw;
+        font-family: 'EB Garamond';
+    }
+    .content .sponsor_information_part_1 {
+        display: inline;
+        text-align: center;
+    }
+    .content #sponsor_details_part_1 {
+        font-size: 4vw;
+        font-family: 'EB Garamond';
+        display: inline-block;
+        text-align: left;
+    }
+    .content #sponsor_example_1 {
+        display: inline;
+        width: 40%;
+        text-align: center;
+    }
+    .content .sponsor_information_part_2 {
+        display: inline;
+        text-align: center;
+    }
+    .content #sponsor_details_part_2 {
+        font-size: 4vw;
+        margin-top: 2%;
+        font-family: 'EB Garamond';
+        display: inline-block;
+        text-align: left;
+    }
+    .content #free_trial_redirect {
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+    }
+    .content #sponsor_example_2 {
+        display: inline;
+        width: 40%;
+        text-align: center;
+    }
+    #sponsor_options_menu #sponsor_options_menu_close_button {
+        border: none;
+        background-color: white;
+    }
+    .sponsor_options_menu_options {
+        border: 1px solid black;
+        margin-top: 2vh;
+    }
+    .sponsor_options_menu_images {
+        width: 100%;
+    }
+    .sponsor_options_menu_titles {
+        font-size: 2vw;
+        font-family: 'Fira Sans';
+    }
+    .sponsor_options_menu_values {
+        font-size: 1.5vw;
+        font-family: 'Fira Sans';
+    }
+    .sponsor_options_menu_descriptions {
+        font-size: 1vw;
+        font-family: 'Fira Sans';
+    }
+    .sponsor_options_menu_benefits_title {
+        font-size: 1vw;
+        font-family: 'Fira Sans';
+    }
+    .sponsor_options_menu_benefits {
+        font-size: 1vw;
+        font-family: 'Fira Sans';
+    }
 }
