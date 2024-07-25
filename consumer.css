@@ -27,6 +27,29 @@ body {
     height: 100%;
     overflow: hidden;
 }
+.content .scrolling_area {
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    animation: scroll 10s linear infinite;
+    position: absolute;
+    bottom: 150%;
+}
+.content .scrolling_area .scrolling_text {
+    font-family: 'MuseoModerno';
+    display: inline-block;
+    color: white;
+    font-size: 3vw;
+    text-decoration: none;
+}
+@keyframes scroll {
+    0% {
+        transform: rotate(-20deg) translate3d(0, 0, 0);
+    }
+    100% {
+        transform: rotate(-20deg) translate3d(-50%, 0, 0);
+    }
+}
 .content #shameless_product_placement_logo {
     position: absolute;
     height: auto;
@@ -129,7 +152,46 @@ body {
     filter: brightness(75%);
     transition: filter 250ms linear;
 }
+.content .consumer_social_media {
+    position: absolute;
+    bottom: 1%;
+    right: 1%;
+}
+.content .consumer_social_media .consumer_social_media_icons {
+    display: inline;
+    color: white;
+    font-size: 3vw;
+    text-decoration: none;
+    transition: 250ms linear;
+}
+.content .consumer_social_media .consumer_social_media_icons:hover {
+    transition: 250ms linear;
+    filter: brightness(50%);
+}
 @media only screen and (max-device-width: 1024px) {
+    .content .scrolling_area {
+        white-space: nowrap;
+        overflow: hidden;
+        display: inline-block;
+        animation: scroll 10s linear infinite;
+        position: absolute;
+        bottom: 125%;
+    }
+    .content .scrolling_area .scrolling_text {
+        font-family: 'MuseoModerno';
+        display: inline-block;
+        color: white;
+        font-size: 7vw;
+        text-decoration: none;
+    }
+    @keyframes scroll {
+        0% {
+            transform: rotate(-20deg) translate3d(0, 0, 0);
+        }
+        100% {
+            transform: rotate(-20deg) translate3d(-50%, 0, 0);
+        }
+    }
     .content #shameless_product_placement_logo {
         position: absolute;
         height: auto;
@@ -231,6 +293,22 @@ body {
     .content #les_dudes_coming_soon:hover {
         filter: brightness(75%);
         transition: filter 250ms linear;
+    }
+    .content .consumer_social_media {
+        position: absolute;
+        bottom: 1%;
+        right: 1%;
+    }
+    .content .consumer_social_media .consumer_social_media_icons {
+        display: inline;
+        color: white;
+        font-size: 8vw;
+        text-decoration: none;
+        transition: 250ms linear;
+    }
+    .content .consumer_social_media .consumer_social_media_icons:hover {
+        transition: 250ms linear;
+        filter: brightness(50%);
     }
     .content #shih_zoo_download_popup {
         visibility: hidden;
