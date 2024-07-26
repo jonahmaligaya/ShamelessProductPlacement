@@ -76,3 +76,80 @@
     filter: brightness(50%);
     transition: 250ms linear;
 }
+@media only screen and (max-device-width: 1024px) {
+    .menu_button {
+        position: absolute;
+        z-index: 3;
+        left: 4%;
+        top: 3%;
+        cursor: pointer;
+        transition: all 0.5s ease-out;
+    }
+    .menu_button .button_line {
+        width: 28px;
+        height: 3px;
+        margin: 0 0 5px 0;
+        background: white;
+        transition: all 0.5s ease-out;
+    }
+    .menu_button_blur {
+        filter: blur(7px);
+        pointer-events: none;
+    }
+    .menu_button.close {
+        transform: rotate(180deg);
+    }
+    .menu_button.close .button_line:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+    .menu_button.close .button_line:nth-child(2) {
+        opacity: 0;
+    }
+    .menu_button.close .button_line:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+    }
+    .menu {
+        position: absolute;
+        color: white;
+        top: 0;
+        width: 100%;
+        height: 200vh;
+        visibility: hidden;
+        overflow: hidden;
+        background-size: cover;
+    }
+    .menu.open {
+        visibility: visible;
+        transition: all 0.5s ease-in;
+        background-color: black;
+    }
+    .menu ul {
+        position: absolute;
+        left: -70%;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    .menu.open ul {
+        transition: all 1.5s ease-in;
+        transform: translate(90vw, 0);
+    }
+    .menu li {
+        float: left;
+    }
+    .menu li a {
+        display: block;
+        color: white;
+        padding-top: 3%;
+        text-align: center;
+        font-size: 4vh;
+        text-decoration: none;
+        font-family: 'Quicksand', sans-serif;
+        transition: 250ms linear;
+    }
+    .menu li a:hover {
+        filter: brightness(50%);
+        transition: 250ms linear;
+    }
+}

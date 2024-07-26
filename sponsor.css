@@ -123,8 +123,8 @@ html {
 .content .sponsor_information_part_1 {
     display: grid;
     align-items: center; 
-    grid-template-columns: 60% 40%;
-    column-gap: 5px;
+    grid-template-columns: 55% 40%;
+    column-gap: 5%;
     margin-left: 2%;
     margin-right: 2%;
 
@@ -143,8 +143,8 @@ html {
     margin-top: 20px;
     display: grid;
     align-items: center; 
-    grid-template-columns: 40% 60%;
-    column-gap: 5px;
+    grid-template-columns: 40% 55%;
+    column-gap: 5%;
     margin-left: 2%;
     margin-right: 2%;
 }
@@ -304,6 +304,7 @@ html {
         text-align: center;
     }
     .content #sponsor_details_part_1 {
+        margin-bottom: 10%;
         font-size: 4vw;
         font-family: 'EB Garamond';
         display: inline-block;
@@ -319,8 +320,8 @@ html {
         text-align: center;
     }
     .content #sponsor_details_part_2 {
+        margin-top: 10%;
         font-size: 4vw;
-        margin-top: 2%;
         font-family: 'EB Garamond';
         display: inline-block;
         text-align: left;

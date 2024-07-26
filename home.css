@@ -193,12 +193,12 @@ body {
     text-align: center;
 }
 .content .scrollable_area .information_section .information_text {
-    font-size: 1.2vw;
+    font-size: 1.5vw;
     font-family: 'Fira Sans';
     color: white;
 }
 .content .scrollable_area .information_section .information_social_media {
-    font-size: 1.5vw;
+    font-size: 2vw;
     color: white;
     display: inline;
     margin-right: 2%;
