@@ -55,7 +55,7 @@ html {
     height: 100%;
 }
 .content .investment_information #title {
-    font-size: 2.2vw;
+    font-size: 2.25vw;
     font-family: 'MuseoModerno';
     color: white;
 }
@@ -141,14 +141,14 @@ html {
 }
 .content .extra_investment_information .section_titles {
     color: white;
-    font-size: 4vw;
+    font-size: 2.25vw;
     font-family: 'MuseoModerno';
     text-align: center;
     margin-left: 1vw;
     margin-right: 1vw;
 }
 .content .extra_investment_information .extra_investment_subtitles {
-    font-size: 3vw;
+    font-size: 2vw;
     font-family: 'Fira Sans';
     color: white;
     text-align: left;
@@ -157,7 +157,7 @@ html {
     font-weight: bold;
 }
 .content .extra_investment_information .extra_investment_text {
-    font-size: 2vw;
+    font-size: 1.5vw;
     font-family: 'Fira Sans';
     color: white;
     text-align: center;
@@ -343,14 +343,14 @@ html {
     }
     .content .extra_investment_information .section_titles {
         color: white;
-        font-size: 8vw;
+        font-size: 5vw;
         font-family: 'MuseoModerno';
         text-align: center;
         margin-left: 1vw;
         margin-right: 1vw;
     }
     .content .extra_investment_information .extra_investment_subtitles {
-        font-size: 6vw;
+        font-size: 4.5vw;
         font-family: 'Fira Sans';
         color: white;
         text-align: left;
@@ -359,7 +359,7 @@ html {
         font-weight: bold;
     }
     .content .extra_investment_information .extra_investment_text {
-        font-size: 4vw;
+        font-size: 3vw;
         font-family: 'Fira Sans';
         color: white;
         text-align: center;
