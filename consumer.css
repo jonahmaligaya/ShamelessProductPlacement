@@ -182,7 +182,7 @@ body {
     top: 0;
     bottom: 0;
     width: 90%;
-    height: 70%;
+    height: fit-content;
     background-color: white;
     border-radius: 10px;
     -webkit-border-radius: 10px;
@@ -243,7 +243,7 @@ body {
 .content #shih_zoo_download_popup #shih_zoo_download_button_section .shih_zoo_download_buttons {
     width: 20vw;
     transition: 250ms linear;
-    padding-bottom: 4%;
+    margin-bottom: 4%;
 }
 .content #shih_zoo_download_popup #shih_zoo_download_button_section .shih_zoo_download_buttons:hover {
     transition: 250ms linear;
@@ -403,7 +403,7 @@ body {
         top: 0;
         bottom: 0;
         width: 100%;
-        height: 35%;
+        height: fit-content;
         background-color: white;
         border-radius: 10px;
         -webkit-border-radius: 10px;
@@ -464,7 +464,7 @@ body {
     .content #shih_zoo_download_popup #shih_zoo_download_button_section .shih_zoo_download_buttons {
         width: 40vw;
         transition: 250ms linear;
-        padding-bottom: 4%;
+        margin-bottom: 4%;
     }
     .content #shih_zoo_download_popup #shih_zoo_download_button_section .shih_zoo_download_buttons:hover {
         transition: 250ms linear;
