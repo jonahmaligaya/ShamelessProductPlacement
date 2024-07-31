@@ -24,14 +24,14 @@ html {
     top: 1%;
     right: 1%;
 }
-.content .partner_social_media_icons {
+.content .partner_social_media .partner_social_media_icons {
     display: inline;
     color: white;
     font-size: 3vw;
     text-decoration: none;
     transition: 250ms linear;
 }
-.content .partner_social_media_icons:hover {
+.content .partner_social_media .partner_social_media_icons:hover {
     transition: 250ms linear;
     filter: brightness(50%);
 }
@@ -55,7 +55,7 @@ html {
     left: 3%;
     top: 50%;
 }
-.content #partner_button {
+.content #partner_buttons #partner_button {
     height: 60px;
     background: #5E5DF0;
     border-radius: 999px;
@@ -75,7 +75,7 @@ html {
     text-decoration: none;
     transition: 250ms;
 }
-.content #partner_button:hover {
+.content #partner_buttons #partner_button:hover {
     background:#4747b7;
     transition: 250ms;
 }
@@ -86,21 +86,21 @@ html {
     background-image: linear-gradient(transparent, white 15%);
     min-height: 200vh;
 }
-.content #partner_information {
+.content #partner_overlay #partner_information {
     margin-top: 20%;
     margin-bottom: 10%;
 }
-.content #partner_title {
+.content #partner_overlay #partner_information #partner_title {
     text-align: center;
     font-size: 6.5vw;
     font-family: 'EB Garamond';
 }
-.content #partner_secondary_title {
+.content #partner_overlay #partner_information #partner_secondary_title {
     text-align: center;
     font-size: 6vw;
     font-family: 'EB Garamond';
 }
-.content #partner_subtitle {
+.content #partner_overlay #partner_information #partner_subtitle {
     font-size: 3vw;
     font-family: 'EB Garamond';
     display: inline-block;
@@ -108,7 +108,7 @@ html {
     margin-right: 2%;
     text-align: center;
 }
-.content .partner_information_part_1 {
+.content #partner_overlay #partner_information .partner_information_part_1 {
     display: grid;
     align-items: center; 
     grid-template-columns: 55% 40%;
@@ -117,17 +117,17 @@ html {
     margin-right: 2%;
 
 }
-.content #partner_details_part_1 {
+.content #partner_overlay #partner_information .partner_information_part_1 .partner_information_part_1_text #partner_details_part_1 {
     font-size: 1.5vw;
     margin-right: 20px;
     font-family: 'EB Garamond';
     display: inline-block;
 }
-.content #partner_example_1 {
+.content #partner_overlay #partner_information .partner_information_part_1 #partner_example_1 {
     display: inline-block;
     width: 100%;
 }
-.content .partner_information_part_2 {
+.content #partner_overlay #partner_information .partner_information_part_2 {
     margin-top: 20px;
     display: grid;
     align-items: center; 
@@ -136,22 +136,22 @@ html {
     margin-left: 2%;
     margin-right: 2%;
 }
-.content #partner_details_part_2 {
+.content #partner_overlay #partner_information .partner_information_part_2_text .partner_information_part_2_text #partner_details_part_2 {
     font-size: 1.5vw;
     margin-left: 10px;
     margin-right: 20px;
     font-family: 'EB Garamond';
     display: inline-block;
 }
-.content #partner_example_2 {
+.content #partner_overlay #partner_information .partner_information_part_2 #partner_example_2 {
     display: inline-block;
     width: 100%;
 }
-.content .collaborate_button_section {
+.content #partner_overlay #partner_information .collaborate_button_section {
     text-align: center;
     margin-top: 4%;
 }
-.content .collaborate_button_section #collaborate_button {
+.content #partner_overlay #partner_information .collaborate_button_section #collaborate_button {
     text-align: center;
     transition: 250ms linear;
     border-color: gray;
@@ -169,7 +169,7 @@ html {
     text-decoration: none;
     filter: drop-shadow(0 5px gray);
 }
-.content .collaborate_button_section #collaborate_button:hover {
+.content #partner_overlay #partner_information .collaborate_button_section #collaborate_button:hover {
     transition: 250ms linear;
     transform: translate(0px, 5px);
     filter: drop-shadow(0 0);
@@ -180,14 +180,14 @@ html {
         top: 3%;
         right: 3%;
     }
-    .content .partner_social_media_icons {
+    .content .partner_social_media .partner_social_media_icons {
         display: inline;
         color: white;
         font-size: 7vw;
         text-decoration: none;
         transition: 250ms linear;
     }
-    .content .partner_social_media_icons:hover {
+    .content .partner_social_media .partner_social_media_icons:hover {
         transition: 250ms linear;
         filter: brightness(50%);
     }
@@ -209,7 +209,7 @@ html {
         position: absolute;
         top: 40%;
     }
-    .content #partner_button {
+    .content #partner_buttons #partner_button {
         height: 60px;
         background: #5E5DF0;
         border-radius: 999px;
@@ -217,7 +217,7 @@ html {
         box-sizing: border-box;
         color: #FFFFFF;
         cursor: pointer;
-        font-size: 3vw;
+        font-size: 5vw;
         line-height: 24px;
         opacity: 1;
         outline: 0 solid transparent;
@@ -229,7 +229,7 @@ html {
         text-decoration: none;
         transition: 250ms;
     }
-    .content #partner_button:hover {
+    .content #partner_buttons #partner_button:hover {
         background:#4747b7;
         transition: 250ms;
     }
@@ -240,20 +240,26 @@ html {
         background-image: linear-gradient(transparent, white 20%);
         min-height: 200vh;
     }
-    .content #partner_information {
+    .content #partner_overlay #partner_information {
         margin-top: 20%;
         margin-bottom: 10%;
         margin-left: 2%;
         margin-right: 2%;
         text-align: center;
     }
-    .content #partner_title {
+    .content #partner_overlay #partner_information #partner_title {
         margin-top: 60%;
         text-align: center;
         font-size: 9.5vw;
         font-family: 'EB Garamond';
     }
-    .content #partner_subtitle {
+    .content #partner_overlay #partner_information #partner_secondary_title {
+        margin-top: 10%;
+        text-align: center;
+        font-size: 9vw;
+        font-family: 'EB Garamond';
+    }
+    .content #partner_overlay #partner_information #partner_subtitle {
         font-size: 6vw;
         font-family: 'EB Garamond';
         display: inline-block;
@@ -261,53 +267,47 @@ html {
         margin-right: 2%;
         text-align: center;
     }
-    .content #partner_secondary_title {
-        margin-top: 10%;
-        text-align: center;
-        font-size: 9vw;
-        font-family: 'EB Garamond';
-    }
-    .content .partner_information_part_1 {
+    .content #partner_overlay #partner_information .partner_information_part_1 {
         display: inline;
         text-align: center;
     }
-    .content .partner_information_part_1 .partner_information_part_1_text {
+    .content #partner_overlay #partner_information .partner_information_part_1 .partner_information_part_1_text {
         margin-bottom: 10%;
     }
-    .content #partner_details_part_1 {
+    .content #partner_overlay #partner_information .partner_information_part_1 .partner_information_part_1_text #partner_details_part_1 {
         font-size: 4vw;
         font-family: 'EB Garamond';
         display: inline-block;
         text-align: left;
     }
-    .content #partner_example_1 {
+    .content #partner_overlay #partner_information .partner_information_part_1 #partner_example_1 {
         display: inline;
         width: 40%;
         text-align: center;
     }
-    .content .partner_information_part_2 {
+    .content #partner_overlay #partner_information .partner_information_part_2 {
         display: inline;
         text-align: center;
     }
-    .content .partner_information_part_2 .partner_information_part_2_text {
+    .content #partner_overlay #partner_information .partner_information_part_2 .partner_information_part_2_text {
         margin-top: 10%;
     }
-    .content #partner_details_part_2 {
+    .content #partner_overlay #partner_information .partner_information_part_2 .partner_information_part_2_text #partner_details_part_2 {
         font-size: 4vw;
         font-family: 'EB Garamond';
         display: inline-block;
         text-align: left;
     }
-    .content #partner_example_2 {
+    .content #partner_overlay #partner_information .partner_information_part_2 #partner_example_2 {
         display: inline;
         width: 40%;
         text-align: center;
     }
-    .content .collaborate_button_section {
+    .content #partner_overlay #partner_information .collaborate_button_section {
         text-align: center;
         margin-top: 4%;
     }
-    .content .collaborate_button_section #collaborate_button {
+    .content #partner_overlay #partner_information .collaborate_button_section #collaborate_button {
         text-align: center;
         transition: 250ms linear;
         border-color: gray;
@@ -325,7 +325,7 @@ html {
         text-decoration: none;
         filter: drop-shadow(0 5px gray);
     }
-    .content .collaborate_button_section #collaborate_button:hover {
+    .content #partner_overlay #partner_information .collaborate_button_section #collaborate_button:hover {
         transition: 250ms linear;
         transform: translate(0px, 5px);
         filter: drop-shadow(0 0);

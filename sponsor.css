@@ -24,14 +24,14 @@ html {
     top: 1%;
     right: 1%;
 }
-.content .sponsor_social_media_icons {
+.content .sponsor_social_media .sponsor_social_media_icons {
     display: inline;
     color: white;
     font-size: 3vw;
     text-decoration: none;
     transition: 250ms linear;
 }
-.content .sponsor_social_media_icons:hover {
+.content .sponsor_social_media .sponsor_social_media_icons:hover {
     transition: 250ms linear;
     filter: brightness(50%);
 }
@@ -55,7 +55,7 @@ html {
     left: 3%;
     top: 50%;
 }
-.content #sponsor_options_menu_button {
+.content #sponsor_buttons #sponsor_options_menu_button {
     height: 60px;
     background: #5E5DF0;
     border-radius: 999px;
@@ -75,11 +75,11 @@ html {
     text-decoration: none;
     transition: 250ms;
 }
-.content #sponsor_options_menu_button:hover {
+.content #sponsor_buttons #sponsor_options_menu_button:hover {
     background:#4747b7;
     transition: 250ms;
 }
-.content #sponsor_contact_button {
+.content #sponsor_buttons #sponsor_contact_button {
     height: 60px;
     border-color: white;
     background-color: transparent;
@@ -99,7 +99,7 @@ html {
     text-decoration: none;
     transition: 250ms;
 }
-.content #sponsor_contact_button:hover {
+.content #sponsor_buttons #sponsor_contact_button:hover {
     background-color: white;
     color: black;
     transition: 250ms;
@@ -111,16 +111,16 @@ html {
     background-image: linear-gradient(transparent, white 15%);
     height: 200vh;
 }
-.content #sponsor_information {
+.content #sponsor_overlay #sponsor_information {
     margin-top: 20%;
     margin-bottom: 10%;
 }
-.content #sponsor_title {
+.content #sponsor_overlay #sponsor_information #sponsor_title {
     text-align: center;
     font-size: 6.5vw;
     font-family: 'EB Garamond';
 }
-.content .sponsor_information_part_1 {
+.content #sponsor_overlay #sponsor_information .sponsor_information_part_1 {
     display: grid;
     align-items: center; 
     grid-template-columns: 55% 40%;
@@ -129,17 +129,17 @@ html {
     margin-right: 2%;
 
 }
-.content #sponsor_details_part_1 {
+.content #sponsor_overlay #sponsor_information .sponsor_information_part_1 #sponsor_details_part_1 {
     font-size: 1.5vw;
     margin-right: 20px;
     font-family: 'EB Garamond';
     display: inline-block;
 }
-.content #sponsor_example_1 {
+.content #sponsor_overlay #sponsor_information .sponsor_information_part_1 #sponsor_example_1 {
     display: inline-block;
     width: 100%;
 }
-.content .sponsor_information_part_2 {
+.content #sponsor_overlay #sponsor_information .sponsor_information_part_2 {
     margin-top: 20px;
     display: grid;
     align-items: center; 
@@ -148,19 +148,19 @@ html {
     margin-left: 2%;
     margin-right: 2%;
 }
-.content #sponsor_details_part_2 {
+.content #sponsor_overlay #sponsor_information .sponsor_information_part_2 #sponsor_details_part_2 {
     font-size: 1.5vw;
     margin-left: 10px;
     margin-right: 20px;
     font-family: 'EB Garamond';
     display: inline-block;
 }
-.content #free_trial_redirect {
+.content #sponsor_overlay #sponsor_information .sponsor_information_part_2 #free_trial_redirect {
     text-decoration: none;
     font-weight: bold;
     color: black;
 }
-.content #sponsor_example_2 {
+.content #sponsor_overlay #sponsor_information .sponsor_information_part_2 #sponsor_example_2 {
     display: inline-block;
     width: 100%;
 }
@@ -168,30 +168,30 @@ html {
     border: none;
     background-color: white;
 }
-.sponsor_options_menu_options {
+#sponsor_options_menu .sponsor_options_menu_options {
     border: 1px solid black;
     margin-top: 2vh;
 }
-.sponsor_options_menu_images {
+#sponsor_options_menu .sponsor_options_menu_options .sponsor_options_menu_images {
     width: 100%;
 }
-.sponsor_options_menu_titles {
+#sponsor_options_menu .sponsor_options_menu_options .sponsor_options_menu_titles {
     font-size: 2vw;
     font-family: 'Fira Sans';
 }
-.sponsor_options_menu_values {
+#sponsor_options_menu .sponsor_options_menu_options .sponsor_options_menu_values {
     font-size: 1.5vw;
     font-family: 'Fira Sans';
 }
-.sponsor_options_menu_descriptions {
+#sponsor_options_menu .sponsor_options_menu_options .sponsor_options_menu_descriptions {
     font-size: 1vw;
     font-family: 'Fira Sans';
 }
-.sponsor_options_menu_benefits_title {
+#sponsor_options_menu .sponsor_options_menu_options .sponsor_options_menu_benefits_title {
     font-size: 1vw;
     font-family: 'Fira Sans';
 }
-.sponsor_options_menu_benefits {
+#sponsor_options_menu .sponsor_options_menu_options .sponsor_options_menu_benefits {
     font-size: 1vw;
     font-family: 'Fira Sans';
 }
@@ -201,14 +201,14 @@ html {
         top: 3%;
         right: 3%;
     }
-    .content .sponsor_social_media_icons {
+    .content .sponsor_social_media .sponsor_social_media_icons {
         display: inline;
         color: white;
         font-size: 7vw;
         text-decoration: none;
         transition: 250ms linear;
     }
-    .content .sponsor_social_media_icons:hover {
+    .content .sponsor_social_media .sponsor_social_media_icons:hover {
         transition: 250ms linear;
         filter: brightness(50%);
     }
@@ -230,7 +230,7 @@ html {
         position: absolute;
         top: 40%;
     }
-    .content #sponsor_options_menu_button {
+    .content #sponsor_buttons #sponsor_options_menu_button {
         height: 60px;
         background: #5E5DF0;
         border-radius: 999px;
@@ -238,7 +238,7 @@ html {
         box-sizing: border-box;
         color: #FFFFFF;
         cursor: pointer;
-        font-size: 3vw;
+        font-size: 5vw;
         line-height: 24px;
         opacity: 1;
         outline: 0 solid transparent;
@@ -250,11 +250,11 @@ html {
         text-decoration: none;
         transition: 250ms;
     }
-    .content #sponsor_options_menu_button:hover {
+    .content #sponsor_buttons #sponsor_options_menu_button:hover {
         background:#4747b7;
         transition: 250ms;
     }
-    .content #sponsor_contact_button {
+    .content #sponsor_buttons #sponsor_contact_button {
         height: 60px;
         border-color: white;
         background-color: transparent;
@@ -262,7 +262,7 @@ html {
         box-sizing: border-box;
         color: white;
         cursor: pointer;
-        font-size: 3vw;
+        font-size: 5vw;
         line-height: 24px;
         opacity: 1;
         outline: 0 solid transparent;
@@ -274,7 +274,7 @@ html {
         text-decoration: none;
         transition: 250ms;
     }
-    .content #sponsor_contact_button:hover {
+    .content #sponsor_buttons #sponsor_contact_button:hover {
         background-color: white;
         color: black;
         transition: 250ms;
@@ -286,52 +286,52 @@ html {
         background-image: linear-gradient(transparent, white 20%);
         height: 200vh;
     }
-    .content #sponsor_information {
+    .content #sponsor_overlay #sponsor_information {
         margin-top: 20%;
         margin-bottom: 10%;
         margin-left: 2%;
         margin-right: 2%;
         text-align: center;
     }
-    .content #sponsor_title {
+    .content #sponsor_overlay #sponsor_information #sponsor_title {
         margin-top: 60%;
         text-align: center;
         font-size: 9.5vw;
         font-family: 'EB Garamond';
     }
-    .content .sponsor_information_part_1 {
+    .content #sponsor_overlay #sponsor_information .sponsor_information_part_1 {
         display: inline;
         text-align: center;
     }
-    .content #sponsor_details_part_1 {
+    .content #sponsor_overlay #sponsor_information .sponsor_information_part_1 #sponsor_details_part_1 {
         margin-bottom: 10%;
         font-size: 4vw;
         font-family: 'EB Garamond';
         display: inline-block;
         text-align: left;
     }
-    .content #sponsor_example_1 {
+    .content #sponsor_overlay #sponsor_information .sponsor_information_part_1 #sponsor_example_1 {
         display: inline;
         width: 40%;
         text-align: center;
     }
-    .content .sponsor_information_part_2 {
+    .content #sponsor_overlay #sponsor_information .sponsor_information_part_2 {
         display: inline;
         text-align: center;
     }
-    .content #sponsor_details_part_2 {
+    .content #sponsor_overlay #sponsor_information .sponsor_information_part_2 #sponsor_details_part_2 {
         margin-top: 10%;
         font-size: 4vw;
         font-family: 'EB Garamond';
         display: inline-block;
         text-align: left;
     }
-    .content #free_trial_redirect {
+    .content #sponsor_overlay #sponsor_information .sponsor_information_part_2 #free_trial_redirect {
         text-decoration: none;
         font-weight: bold;
         color: black;
     }
-    .content #sponsor_example_2 {
+    .content #sponsor_overlay #sponsor_information .sponsor_information_part_2 #sponsor_example_2 {
         display: inline;
         width: 40%;
         text-align: center;
@@ -340,31 +340,31 @@ html {
         border: none;
         background-color: white;
     }
-    .sponsor_options_menu_options {
+    #sponsor_options_menu .sponsor_options_menu_options {
         border: 1px solid black;
         margin-top: 2vh;
     }
-    .sponsor_options_menu_images {
+    #sponsor_options_menu .sponsor_options_menu_options .sponsor_options_menu_images {
         width: 100%;
     }
-    .sponsor_options_menu_titles {
-        font-size: 2vw;
+    #sponsor_options_menu .sponsor_options_menu_options .sponsor_options_menu_titles {
+        font-size: 7vw;
         font-family: 'Fira Sans';
     }
-    .sponsor_options_menu_values {
-        font-size: 1.5vw;
+    #sponsor_options_menu .sponsor_options_menu_options .sponsor_options_menu_values {
+        font-size: 5vw;
         font-family: 'Fira Sans';
     }
-    .sponsor_options_menu_descriptions {
-        font-size: 1vw;
+    #sponsor_options_menu .sponsor_options_menu_options .sponsor_options_menu_descriptions {
+        font-size: 4vw;
         font-family: 'Fira Sans';
     }
-    .sponsor_options_menu_benefits_title {
-        font-size: 1vw;
+    #sponsor_options_menu .sponsor_options_menu_options .sponsor_options_menu_benefits_title {
+        font-size: 4vw;
         font-family: 'Fira Sans';
     }
-    .sponsor_options_menu_benefits {
-        font-size: 1vw;
+    #sponsor_options_menu .sponsor_options_menu_options .sponsor_options_menu_benefits {
+        font-size: 4vw;
         font-family: 'Fira Sans';
     }
 }

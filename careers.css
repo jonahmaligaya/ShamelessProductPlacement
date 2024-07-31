@@ -12,7 +12,7 @@ body {
 .content {
     overflow: visible;
 }
-#background_video {
+.content #background_video {
     min-height: 100vh;
     max-width: 100%;
     object-fit: fill;
@@ -34,18 +34,18 @@ body {
     transition: all 0.4s ease-in;
     visibility: hidden;
 }
-.content #shameless_product_placement_logo {
+.content .careers_details #shameless_product_placement_logo {
     position: absolute;
     width: 15%;
     right: 2.5%;
     top: 2.5%;
     transition: 250ms linear;
 }
-.content #shameless_product_placement_logo:hover {
+.content .careers_details #shameless_product_placement_logo:hover {
     filter: brightness(75%);
     transition: 250ms linear;
 }
-.content #careers_text {
+.content .careers_details #careers_text {
     color: white;
     font-family: 'MuseoModerno';
     position: absolute;
@@ -53,7 +53,7 @@ body {
     left: 2%;
     font-size: 5.5vw;
 }
-.content #careers_subtext {
+.content .careers_details #careers_subtext {
     color: white;
     font-family: 'MuseoModerno';
     position: absolute;
@@ -61,7 +61,7 @@ body {
     left: 2%;
     font-size: 3vw;
 }
-.content .careers_buttons {
+.content .careers_details .scrollable_area .careers_career .careers_buttons {
     margin-left: 10%;
     margin-top: 3%;
     border: none;
@@ -71,14 +71,14 @@ body {
     font-family: 'MuseoModerno';
     transition: 250ms linear;
 }
-.content .careers_buttons:hover {
+.content .careers_details .scrollable_area .careers_career .careers_buttons:hover {
     filter: brightness(50%);
     transition: 250ms linear;
 }
-.content .careers_extensions {
+.content .careers_details .scrollable_area .careers_career .careers_extensions {
     background-color: white;
 }
-.content .careers_descriptions {
+.content .careers_details .scrollable_area .careers_career .careers_descriptions {
     background-color: white;
     width: 100%;
     transition: 250ms linear;
@@ -86,26 +86,26 @@ body {
     grid-template-columns: 64% 35%;
     column-gap: 1%;
 }
-.content .careers_text {
+.content .careers_details .scrollable_area .careers_career .careers_descriptions .careers_text {
     padding: 2%;
 }
-.content .careers_main_text {
+.content .careers_details .scrollable_area .careers_career .careers_descriptions .careers_text .careers_main_text {
     font-family: 'Fira Sans';
     font-size: 3.4vw;
     color: black;
 
 }
-.content .careers_skills_titles {
+.content .careers_details .scrollable_area .careers_career .careers_descriptions .careers_text .careers_skills_titles {
     font-family: 'Fira Sans';
     font-size: 2vw;
     color: black;
 }
-.content .careers_skills_list {
+.content .careers_details .scrollable_area .careers_career .careers_descriptions .careers_text .careers_skills_list {
     font-family: 'Fira Sans';
     font-size: 1.2vw;
     color: gray;
 }
-.content .careers_apply_button_section .careers_apply_buttons {
+.content .careers_details .scrollable_area .careers_career .careers_descriptions .careers_text .careers_apply_button_section .careers_apply_buttons {
     text-align: center;
     transition: 250ms linear;
     border-color: black;
@@ -123,24 +123,24 @@ body {
     text-decoration: none;
     filter: drop-shadow(0 5px);
 }
-.content .careers_apply_button_section .careers_apply_buttons:hover {
+.content .careers_details .scrollable_area .careers_career .careers_descriptions .careers_text .careers_apply_button_section .careers_apply_buttons:hover {
     transition: 250ms linear;
     transform: translate(0px, 5px);
     filter: drop-shadow(0 0);
 }
-.content .careers_images {
+.content .careers_details .scrollable_area .careers_career .careers_descriptions .careers_images {
     width: 100%;
     padding: 4%;
     margin-bottom: 4%;
 }
-.content #careers_why_title {
+.content .careers_details .scrollable_area .careers_why #careers_why_title {
     margin-top: 4%;
     color: white;
     font-family: 'MuseoModerno';
     font-size: 5.5vw;
     text-align: center;
 }
-.content #careers_why_text {
+.content .careers_details .scrollable_area .careers_why #careers_why_text {
     font-size: 2vw;
     font-family: 'Fira Sans';
     color: white;
@@ -150,7 +150,7 @@ body {
     text-align: center;
 }
 @media only screen and (max-device-width: 1024px) {
-    #background_video {
+    .content #background_video {
         min-height: 100vh;
         max-width: 100%;
         object-fit: fill;
@@ -172,18 +172,18 @@ body {
         transition: all 0.4s ease-in;
         visibility: hidden;
     }
-    .content #shameless_product_placement_logo {
+    .content .careers_details #shameless_product_placement_logo {
         position: absolute;
         width: 40%;
         right: 3%;
         top: 3%;
         transition: 250ms linear;
     }
-    .content #shameless_product_placement_logo:hover {
+    .content .careers_details #shameless_product_placement_logo:hover {
         filter: brightness(75%);
         transition: 250ms linear;
     }
-    .content #careers_text {
+    .content .careers_details #careers_text {
         color: white;
         font-family: 'MuseoModerno';
         position: absolute;
@@ -191,7 +191,7 @@ body {
         left: 2%;
         font-size: 10vw;
     }
-    .content #careers_subtext {
+    .content .careers_details #careers_subtext {
         color: white;
         font-family: 'MuseoModerno';
         position: absolute;
@@ -199,7 +199,7 @@ body {
         left: 2%;
         font-size: 8vw;
     }
-    .content .careers_buttons {
+    .content .careers_details .scrollable_area .careers_career .careers_buttons {
         margin-left: 10%;
         margin-top: 3%;
         border: none;
@@ -209,23 +209,23 @@ body {
         font-family: 'MuseoModerno';
         transition: 250ms linear;
     }
-    .content .careers_buttons:hover {
+    .content .careers_details .scrollable_area .careers_career .careers_buttons:hover {
         filter: brightness(50%);
         transition: 250ms linear;
     }
-    .content .careers_extensions {
+    .content .careers_details .scrollable_area .careers_career .careers_extensions {
         background-color: white;
     }
-    .content .careers_descriptions {
+    .content .careers_details .scrollable_area .careers_career .careers_descriptions {
         background-color: white;
         width: 100%;
         transition: 250ms linear;
         display: block;
     }
-    .content .careers_text {
+    .content .careers_details .scrollable_area .careers_career .careers_descriptions .careers_text {
         padding: 2%;
     }
-    .content .careers_main_text {
+    .content .careers_details .scrollable_area .careers_career .careers_descriptions .careers_text .careers_main_text {
         margin-left: 2%;
         margin-right: 2%;
         font-family: 'Fira Sans';
@@ -233,24 +233,24 @@ body {
         color: black;
     
     }
-    .content .careers_skills_titles {
+    .content .careers_details .scrollable_area .careers_career .careers_descriptions .careers_text .careers_skills_titles {
         margin-left: 2%;
         margin-right: 2%;
         font-family: 'Fira Sans';
         font-size: 4.5vw;
         color: black;
     }
-    .content .careers_skills_list {
+    .content .careers_details .scrollable_area .careers_career .careers_descriptions .careers_text .careers_skills_list {
         margin-left: 2%;
         margin-right: 2%;
         font-family: 'Fira Sans';
         font-size: 4vw;
         color: gray;
     }
-    .content .careers_apply_button_section {
+    .content .careers_details .scrollable_area .careers_career .careers_descriptions .careers_text .careers_apply_button_section {
         text-align: center;
     }
-    .content .careers_apply_button_section .careers_apply_buttons {
+    .content .careers_details .scrollable_area .careers_career .careers_descriptions .careers_text .careers_apply_button_section .careers_apply_buttons {
         text-align: center;
         transition: 250ms linear;
         border-color: black;
@@ -268,24 +268,24 @@ body {
         text-decoration: none;
         filter: drop-shadow(0 5px);
     }
-    .content .careers_apply_button_section .careers_apply_buttons:hover {
+    .content .careers_details .scrollable_area .careers_career .careers_descriptions .careers_text .careers_apply_button_section .careers_apply_buttons:hover {
         transition: 250ms linear;
         transform: translate(0px, 5px);
         filter: drop-shadow(0 0);
     }
-    .content .careers_images {
+    .content .careers_details .scrollable_area .careers_career .careers_descriptions .careers_images {
         width: 100%;
         padding: 4%;
         margin-bottom: 4%;
     }
-    .content #careers_why_title {
+    .content .careers_details .scrollable_area .careers_why #careers_why_title {
         margin-top: 8%;
         color: white;
         font-family: 'MuseoModerno';
         font-size: 10vw;
         text-align: center;
     }
-    .content #careers_why_text {
+    .content .careers_details .scrollable_area .careers_why #careers_why_text {
         font-size: 4vw;
         font-family: 'Fira Sans';
         color: white;

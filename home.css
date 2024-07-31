@@ -14,7 +14,7 @@ body {
     align-items: flex-start;
     overflow: visible;
 }
-#background_video {
+.content #background_video {
     min-height: 100vh;
     max-width: 100%;
     object-fit: fill;
@@ -36,18 +36,18 @@ body {
     transition: all 0.4s ease-in;
     visibility: hidden;
 }
-.content #shameless_product_placement_logo {
+.content .home_details #shameless_product_placement_logo {
     position: absolute;
     width: 15%;
     right: 2.5%;
     top: 2.5%;
     transition: 250ms linear;
 }
-.content #shameless_product_placement_logo:hover {
+.content .home_details #shameless_product_placement_logo:hover {
     transition: 250ms linear;
     filter: brightness(75%);
 }
-.content #home_text {
+.content .home_details #home_text {
     color: white;
     font-family: 'MuseoModerno';
     position: absolute;
@@ -55,11 +55,11 @@ body {
     left: 2%;
     font-size: 5vw;
 }
-.content #scroll {
+.content .home_details #scroll {
     display: inline-block;
     text-decoration: none;
 }
-.content #down_arrow {
+.content .home_details #scroll #down_arrow {
     position: absolute;
     margin: auto;
     left: 0;
@@ -69,11 +69,11 @@ body {
     transition: 250ms linear;
     
 }
-.content #down_arrow:hover {
+.content .home_details #scroll #down_arrow:hover {
     transition: 250ms linear;
     filter: brightness(50%);
 }
-.content .scrollable_area #story_title {
+.content .home_details .scrollable_area #story_title {
     color: white;
     font-size: 6vw;
     font-family: 'MuseoModerno';
@@ -82,7 +82,7 @@ body {
     font-weight: bold;
     text-align: center;
 }
-.content .scrollable_area .section_titles {
+.content .home_details .scrollable_area .section_titles {
     color: white;
     font-size: 4vw;
     font-family: 'MuseoModerno';
@@ -90,7 +90,10 @@ body {
     margin-right: 1vw;
     text-align: center;
 }
-.content .scrollable_area .description {
+.content .home_details .scrollable_area .description_section {
+    margin-bottom: 10%;
+}
+.content .home_details .scrollable_area .description_section .description {
     font-size: 2vw;
     font-family: 'Fira Sans';
     color: white;
@@ -99,41 +102,27 @@ body {
     margin-bottom: 5%;
     text-align: center;
 }
-.content .scrollable_area .description_section {
-    margin-bottom: 10%;
-}
-.content .scrollable_area .serve_section {
+.content .home_details .scrollable_area .serve_section {
     margin-bottom: 10%;
     margin-left: 1vw;
     margin-right: 1vw;
     text-align: center;
 }
-.content .scrollable_area .serve_section .serve_header {
-    margin-bottom: 4%;
-}
-.content .scrollable_area .serve_section .serve_header .serve_text {
-    color: white;
-    font-size: 2vw;
-    font-family: 'Fira Sans';
-    display: inline;
-    margin: 0;
-    padding: 0;
-}
-.content .scrollable_area .serve_section .serve_information {
+.content .home_details .scrollable_area .serve_section .serve_information {
     display: grid;
     grid-template-columns: 33% 33% 33%;
 }
-.content .scrollable_area .serve_section .serve_information .serve_images {
+.content .home_details .scrollable_area .serve_section .serve_information .serve_images {
     width: 50%;
     text-align: center;
     margin-bottom: 4%;
 }
-.content .scrollable_area .serve_section .serve_information .serve_button_links {
+.content .home_details .scrollable_area .serve_section .serve_information .serve_button_links {
     text-decoration: none;
     margin: 0;
     padding: 0;
 }
-.content .scrollable_area .serve_section .serve_information .serve_buttons {
+.content .home_details .scrollable_area .serve_section .serve_information .serve_buttons {
     color: white;
     font-size: 5vw;
     font-family: 'Fira Sans';
@@ -144,26 +133,26 @@ body {
     text-decoration: none;
     font-weight: bold;
 }
-.content .scrollable_area .serve_section .serve_information .serve_buttons:hover {
+.content .home_details .scrollable_area .serve_section .serve_information .serve_buttons:hover {
     filter: brightness(50%);
     transition: 250ms linear;
 }
-.content .scrollable_area .serve_section .serve_information .serve_list {
+.content .home_details .scrollable_area .serve_section .serve_information .serve_list {
     text-align: center;
     list-style: inside;
 }
-.content .scrollable_area .serve_section .serve_information .serve_list .serve_description {
+.content .home_details .scrollable_area .serve_section .serve_information .serve_list .serve_description {
     color: white;
     font-size: 2vw;
     font-family: 'Fira Sans';
 }
-.content .scrollable_area .team_section {
+.content .home_details .scrollable_area .team_section {
     margin-bottom: 10%;
 }
-.content .scrollable_area .team_section .team_social_media {
+.content .home_details .scrollable_area .team_section .team_social_media {
     text-align: center;
 }
-.content .scrollable_area .team_section .team_social_media .team_social_media_icons {
+.content .home_details .scrollable_area .team_section .team_social_media .team_social_media_icons {
     display: inline;
     color: white;
     font-size: 4vw;
@@ -171,11 +160,11 @@ body {
     margin: 4%;
     transition: 250ms linear;
 }
-.content .scrollable_area .team_section .team_social_media .team_social_media_icons:hover {
+.content .home_details .scrollable_area .team_section .team_social_media .team_social_media_icons:hover {
     transition: 250ms linear;
     filter: brightness(50%);
 }
-.content .scrollable_area .team_section .people {
+.content .home_details .scrollable_area .team_section .people {
     display: grid;
     grid-template-columns: 40% 58%;
     column-gap: 2%;
@@ -184,35 +173,35 @@ body {
     margin-bottom: 4%;
     margin-top: 5%;
 }
-.content .scrollable_area .team_section .people_images {
+.content .home_details .scrollable_area .team_section .people .people_images {
     width: 100%;
 }
-.content .scrollable_area .name_titles {
+.content .home_details .scrollable_area .team_section .people .name_titles {
     font-size: 4vw;
     font-family: 'Fira Sans';
     color: white;
     text-align: center;
 }
-.content .scrollable_area .information_section .information_text {
+.content .home_details .scrollable_area .team_section .people .information_section .information_text {
     font-size: 1.5vw;
     font-family: 'Fira Sans';
     color: white;
 }
-.content .scrollable_area .information_section .information_social_media {
+.content .home_details .scrollable_area .team_section .people .information_section .information_social_media {
     font-size: 2vw;
     color: white;
     display: inline;
     margin-right: 2%;
     transition: 250ms linear;
 }
-.content .scrollable_area .information_section .information_social_media:hover {
+.content .home_details .scrollable_area .team_section .people .information_section .information_social_media:hover {
     filter: brightness(50%);
     transition: 250ms linear;
 }
-.content .scrollable_area .game_section {
+.content .home_details .scrollable_area .game_section {
     padding-bottom: 40%;
 }
-.content .scrollable_area .game_section .games_header {
+.content .home_details .scrollable_area .game_section .games .games_header {
     display: grid;
     grid-template-columns: 68% 30%;
     column-gap: 2%;
@@ -221,7 +210,7 @@ body {
     margin-bottom: 4%;
     align-items: center;
 }
-.content .scrollable_area .game_section hr {
+.content .home_details .scrollable_area .game_section .games .games_header hr {
     color: white;
     border-color: white;
     text-align: center;
@@ -231,21 +220,21 @@ body {
     border-style: solid;
     opacity: 100%;
 }
-.content .scrollable_area .game_section .games_titles {
+.content .home_details .scrollable_area .game_section .games .games_header .games_text .games_titles {
     color: white;
     font-size: 3vw;
     font-family: 'MuseoModerno';
     margin-left: 1vw;
     margin-right: 1vw;
 }
-.content .scrollable_area .game_section .games_descriptions {
+.content .home_details .scrollable_area .game_section .games .games_header .games_text .games_descriptions {
     color: white;
     font-size: 1.2vw;
     font-family: 'MuseoModerno';
     margin-left: 1vw;
     margin-right: 1vw;
 }
-.content .scrollable_area .game_section .games_buttons {
+.content .home_details .scrollable_area .game_section .games .games_header .games_text .games_buttons {
     border-radius: 999px;
     box-sizing: border-box;
     background-color: transparent;
@@ -263,22 +252,22 @@ body {
     margin-right: 1vw;
     transition: 250ms linear;
 }
-.content .scrollable_area .game_section .games_buttons:hover {
+.content .home_details .scrollable_area .game_section .games .games_header .games_text .games_buttons:hover {
     transition: 250ms linear;
     filter: brightness(50%);
 }
-.content .scrollable_area .game_section .games_logos {
+.content .home_details .scrollable_area .game_section .games .games_header .games_logos {
     width: 100%;
     transform: scale(0.95);
     transition: 250ms linear;
 }
-.content .scrollable_area .game_section .games_logos:hover {
+.content .home_details .scrollable_area .game_section .games .games_header .games_logos:hover {
     transform: scale(1.05);
     transition: 250ms linear;
     padding: none;
 }
 @media only screen and (max-device-width: 1024px) {
-    #background_video {
+    .content #background_video {
         min-height: 100vh;
         max-width: 100%;
         object-fit: fill;
@@ -300,18 +289,18 @@ body {
         transition: all 0.4s ease-in;
         visibility: hidden;
     }
-    .content #shameless_product_placement_logo {
+    .content .home_details #shameless_product_placement_logo {
         position: absolute;
         width: 40%;
         right: 3%;
         top: 3%;
         transition: 250ms linear;
     }
-    .content #shameless_product_placement_logo:hover {
+    .content .home_details #shameless_product_placement_logo:hover {
         transition: 250ms linear;
         filter: brightness(75%);
     }
-    .content #home_text {
+    .content .home_details #home_text {
         color: white;
         font-family: 'MuseoModerno';
         position: absolute;
@@ -319,11 +308,11 @@ body {
         left: 2%;
         font-size: 10vw;
     }
-    .content #scroll {
+    .content .home_details #scroll {
         display: inline-block;
         text-decoration: none;
     }
-    .content #down_arrow {
+    .content .home_details #scroll #down_arrow {
         position: absolute;
         margin: auto;
         left: 0;
@@ -333,11 +322,11 @@ body {
         transition: 250ms linear;
         
     }
-    .content #down_arrow:hover {
+    .content .home_details #scroll #down_arrow:hover {
         transition: 250ms linear;
         filter: brightness(50%);
     }
-    .content .scrollable_area #story_title {
+    .content .home_details .scrollable_area #story_title {
         color: white;
         font-size: 10vw;
         font-family: 'MuseoModerno';
@@ -346,7 +335,7 @@ body {
         font-weight: bold;
         text-align: center;
     }
-    .content .scrollable_area .section_titles {
+    .content .home_details .scrollable_area .section_titles {
         color: white;
         font-size: 9vw;
         font-family: 'MuseoModerno';
@@ -354,7 +343,10 @@ body {
         margin-right: 1vw;
         text-align: center;
     }
-    .content .scrollable_area .description {
+    .content .home_details .scrollable_area .description_section {
+        margin-bottom: 10%;
+    }
+    .content .home_details .scrollable_area .description_section .description {
         font-size: 4vw;
         font-family: 'Fira Sans';
         color: white;
@@ -363,30 +355,27 @@ body {
         margin-bottom: 5%;
         text-align: center;
     }
-    .content .scrollable_area .description_section {
-        margin-bottom: 10%;
-    }
-    .content .scrollable_area .serve_section {
+    .content .home_details .scrollable_area .serve_section {
         margin-bottom: 10%;
         margin-left: 1vw;
         margin-right: 1vw;
         text-align: center;
     }
-    .content .scrollable_area .serve_section .serve_information {
+    .content .home_details .scrollable_area .serve_section .serve_information {
         display: grid;
         grid-template-columns: 33% 33% 33%;
     }
-    .content .scrollable_area .serve_section .serve_information .serve_images {
+    .content .home_details .scrollable_area .serve_section .serve_information .serve_images {
         width: 50%;
         text-align: center;
         margin-bottom: 4%;
     }
-    .content .scrollable_area .serve_section .serve_information .serve_button_links {
+    .content .home_details .scrollable_area .serve_section .serve_information .serve_button_links {
         text-decoration: none;
         margin: 0;
         padding: 0;
     }
-    .content .scrollable_area .serve_section .serve_information .serve_buttons {
+    .content .home_details .scrollable_area .serve_section .serve_information .serve_buttons {
         color: white;
         font-size: 5vw;
         font-family: 'Fira Sans';
@@ -397,26 +386,26 @@ body {
         text-decoration: none;
         font-weight: bold;
     }
-    .content .scrollable_area .serve_section .serve_information .serve_buttons:hover {
+    .content .home_details .scrollable_area .serve_section .serve_information .serve_buttons:hover {
         filter: brightness(50%);
         transition: 250ms linear;
     }
-    .content .scrollable_area .serve_section .serve_information .serve_list {
+    .content .home_details .scrollable_area .serve_section .serve_information .serve_list {
         text-align: center;
         list-style: inside;
     }
-    .content .scrollable_area .serve_section .serve_information .serve_list .serve_description {
+    .content .home_details .scrollable_area .serve_section .serve_information .serve_list .serve_description {
         color: white;
         font-size: 4vw;
         font-family: 'Fira Sans';
     }
-    .content .scrollable_area .team_section {
+    .content .home_details .scrollable_area .team_section {
         margin-bottom: 10%;
     }
-    .content .scrollable_area .team_section .team_social_media {
+    .content .home_details .scrollable_area .team_section .team_social_media {
         text-align: center;
     }
-    .content .scrollable_area .team_section .team_social_media .team_social_media_icons {
+    .content .home_details .scrollable_area .team_section .team_social_media .team_social_media_icons {
         display: inline;
         color: white;
         font-size: 8vw;
@@ -424,47 +413,47 @@ body {
         margin: 4%;
         transition: 250ms linear;
     }
-    .content .scrollable_area .team_section .team_social_media .team_social_media_icons:hover {
+    .content .home_details .scrollable_area .team_section .team_social_media .team_social_media_icons:hover {
         transition: 250ms linear;
         filter: brightness(50%);
     }
-    .content .scrollable_area .team_section .people {
+    .content .home_details .scrollable_area .team_section .people {
         display: block;
         margin-bottom: 10%;
     }
-    .content .scrollable_area .team_section .people_images {
+    .content .home_details .scrollable_area .team_section .people .people_images {
         width: 100%;
     }
-    .content .scrollable_area .name_titles {
+    .content .home_details .scrollable_area .team_section .people .name_titles {
         font-size: 8vw;
         font-family: 'Fira Sans';
         color: white;
         text-align: center;
     }
-    .content .scrollable_area .information_section {
+    .content .home_details .scrollable_area .team_section .people .information_section {
         text-align: center;
     }
-    .content .scrollable_area .information_section .information_text {
+    .content .home_details .scrollable_area .team_section .people .information_section .information_text {
         font-size: 4vw;
         font-family: 'Fira Sans';
         color: white;
         text-align: center;
     }
-    .content .scrollable_area .information_section .information_social_media {
+    .content .home_details .scrollable_area .team_section .people .information_section .information_social_media {
         font-size: 6vw;
         color: white;
         display: inline;
         margin-right: 2%;
         transition: 250ms linear;
     }
-    .content .scrollable_area .information_section .information_social_media:hover {
+    .content .home_details .scrollable_area .team_section .people .information_section .information_social_media:hover {
         filter: brightness(50%);
         transition: 250ms linear;
     }
-    .content .scrollable_area .game_section {
+    .content .home_details .scrollable_area .game_section {
         padding-bottom: 40%;
     }
-    .content .scrollable_area .game_section .games_header {
+    .content .home_details .scrollable_area .game_section .games .games_header {
         display: grid;
         grid-template-columns: 58% 40%;
         column-gap: 2%;
@@ -473,7 +462,7 @@ body {
         margin-bottom: 4%;
         align-items: center;
     }
-    .content .scrollable_area .game_section hr {
+    .content .home_details .scrollable_area .game_section .games .games_header .games_text hr {
         color: white;
         border-color: white;
         text-align: center;
@@ -483,21 +472,21 @@ body {
         border-style: solid;
         opacity: 100%;
     }
-    .content .scrollable_area .game_section .games_titles {
+    .content .home_details .scrollable_area .game_section .games .games_header .games_text .games_titles {
         color: white;
         font-size: 8vw;
         font-family: 'MuseoModerno';
         margin-left: 1vw;
         margin-right: 1vw;
     }
-    .content .scrollable_area .game_section .games_descriptions {
+    .content .home_details .scrollable_area .game_section .games .games_header .games_text .games_descriptions {
         color: white;
         font-size: 4vw;
         font-family: 'MuseoModerno';
         margin-left: 1vw;
         margin-right: 1vw;
     }
-    .content .scrollable_area .game_section .games_buttons {
+    .content .home_details .scrollable_area .game_section .games .games_header .games_text .games_buttons {
         border-radius: 999px;
         box-sizing: border-box;
         background-color: transparent;
@@ -515,16 +504,16 @@ body {
         margin-right: 1vw;
         transition: 250ms linear;
     }
-    .content .scrollable_area .game_section .games_buttons:hover {
+    .content .home_details .scrollable_area .game_section .games .games_header .games_text .games_buttons:hover {
         transition: 250ms linear;
         filter: brightness(50%);
     }
-    .content .scrollable_area .game_section .games_logos {
+    .content .home_details .scrollable_area .game_section .games .games_header .games_logos {
         width: 100%;
         transform: scale(0.95);
         transition: 250ms linear;
     }
-    .content .scrollable_area .game_section .games_logos:hover {
+    .content .home_details .scrollable_area .game_section .games .games_header .games_logos:hover {
         transform: scale(1.05);
         transition: 250ms linear;
         padding: none;

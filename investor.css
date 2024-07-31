@@ -20,7 +20,11 @@ html {
     transition: all 0.4s ease-in;
     visibility: hidden;
 }
-.content #shameless_product_placement_logo {
+.content .investment_information_header {
+    background-image: linear-gradient(black 85%, transparent);
+    height: 110vh;
+}
+.content .investment_information_header #shameless_product_placement_logo {
     width: 15%;
     height: auto;
     position: absolute;
@@ -28,15 +32,11 @@ html {
     top: 2%;
     transition: 250ms linear;
 }
-.content #shameless_product_placement_logo:hover {
+.content .investment_information_header #shameless_product_placement_logo:hover {
     filter: brightness(75%);
     transition: 250ms linear;
 }
-.content .head_investment_information {
-    background-image: linear-gradient(black 85%, transparent);
-    height: 110vh;
-}
-.content .main_investment_information {
+.content .investment_information_header .main_investment_information {
     padding-top: 7.5%;
     margin-left: 2%;
     margin-right: 2%;
@@ -46,33 +46,33 @@ html {
     grid-template-columns: 60% 35%;
     column-gap: 5%;
 }
-.content .video {
+.content .investment_information_header .main_investment_information .video {
     width: 100%;
     height: 70vh;
 }
-.content .video #investment_video {
+.content .investment_information_header .main_investment_information .video #investment_video {
     width: 100%;
     height: 100%;
 }
-.content .investment_information #title {
+.content .investment_information_header .main_investment_information .investment_information #title {
     font-size: 2.25vw;
     font-family: 'MuseoModerno';
     color: white;
 }
-.content .investment_information #description {
+.content .investment_information_header .main_investment_information .investment_information #description {
     font-size: 1.3vw;
     font-family: 'Fira Sans';
     color: gray;
 }
-.content .investment_information #invested {
+.content .investment_information_header .main_investment_information .investment_information #invested {
     font-size: 1vw;
     font-family: 'Fira Sans';
     color: white;
 }
-.content .investment_information .investment_buttons {
+.content .investment_information_header .main_investment_information .investment_information .investment_buttons {
     margin-bottom: 5%;
 }
-.content .investment_information .investment_buttons #options {
+.content .investment_information_header .main_investment_information .investment_information .investment_buttons #options {
     transition: 250ms linear;
     border-color: white;
     background-color: #7335b1;
@@ -89,13 +89,13 @@ html {
     text-decoration: none;
     filter: drop-shadow(0 5px);
 }
-.content .investment_information #options:hover {
+.content .investment_information_header .main_investment_information .investment_information #options:hover {
     background: #4c2375;
     filter: drop-shadow(0 0);
     transform: translate(0px, 5px);
     transition: 250ms linear;
 }
-.content .investment_information #information {
+.content .investment_information_header .main_investment_information .investment_information #information {
     margin-top: 1%;
     margin-left: 1%;
     transition: 250ms linear;
@@ -114,16 +114,16 @@ html {
     text-decoration: none;
     filter: drop-shadow(0 5px);
 }
-.content .investment_information #information:hover {
+.content .investment_information_header .main_investment_information .investment_information #information:hover {
     background: #4c2375;
     filter: drop-shadow(0 0);
     transform: translate(0px, 5px);
     transition: 250ms linear;
 }
-.content .investment_information .investor_social_media {
+.content .investment_information_header .main_investment_information .investment_information .investor_social_media {
     margin-top: 3%;
 }
-.content .investment_information .investor_social_media .investor_social_media_icons {
+.content .investment_information_header .main_investment_information .investment_information .investor_social_media .investor_social_media_icons {
     display: inline;
     color: white;
     font-size: 2vw;
@@ -131,15 +131,15 @@ html {
     margin-right: 4%;
     transition: 250ms linear;
 }
-.content .investment_information .investor_social_media .investor_social_media_icons:hover {
+.content .investment_information_header .main_investment_information .investment_information .investor_social_media .investor_social_media_icons:hover {
     transition: 250ms linear;
     filter: brightness(50%);
 }
-.content .extra_investment_information {
+.content .investment_information_header .extra_investment_information {
     display: block;
     width: 100%;
 }
-.content .extra_investment_information .section_titles {
+.content .investment_information_header .extra_investment_information .section_titles {
     color: white;
     font-size: 2.25vw;
     font-family: 'MuseoModerno';
@@ -147,7 +147,7 @@ html {
     margin-left: 1vw;
     margin-right: 1vw;
 }
-.content .extra_investment_information .extra_investment_subtitles {
+.content .investment_information_header .extra_investment_information .extra_investment_subtitles {
     font-size: 2vw;
     font-family: 'Fira Sans';
     color: white;
@@ -156,7 +156,7 @@ html {
     margin-right: 2vw;
     font-weight: bold;
 }
-.content .extra_investment_information .extra_investment_text {
+.content .investment_information_header .extra_investment_information .extra_investment_text {
     font-size: 1.5vw;
     font-family: 'Fira Sans';
     color: white;
@@ -165,11 +165,11 @@ html {
     margin-left: 1vw;
     margin-right: 1vw;
 }
-.content .extra_investment_information .learn_more_button_section {
+.content .investment_information_header .extra_investment_information .learn_more_button_section {
     text-align: center;
     padding-bottom: 5%;
 }
-.content .extra_investment_information .learn_more_button_section #learn_more_button {
+.content .investment_information_header .extra_investment_information .learn_more_button_section #learn_more_button {
     transition: 250ms linear;
     border-color: black;
     background-color: white;
@@ -186,7 +186,7 @@ html {
     text-decoration: none;
     filter: drop-shadow(0 5px);
 }
-.content .extra_investment_information .learn_more_button_section #learn_more_button:hover {
+.content .investment_information_header .extra_investment_information .learn_more_button_section #learn_more_button:hover {
     transition: 250ms linear;
     transform: translate(0px, 5px);
     filter: drop-shadow(0 0);
@@ -195,35 +195,39 @@ html {
     border: none;
     background-color: white;
 }
-.projects_menu_options {
+#projects_menu .projects_menu_options {
     border: 1px solid black;
     margin-top: 2vh;
 }
-.projects_menu_options .projects_menu_images {
+#projects_menu .projects_menu_options .projects_menu_images {
     width: 100%;
 }
-.projects_menu_options .projects_menu_titles {
+#projects_menu .projects_menu_options .projects_menu_titles {
     font-size: 2vw;
     font-family: 'Fira Sans';
 }
-.projects_menu_options .projects_menu_values {
+#projects_menu .projects_menu_options .projects_menu_values {
     font-size: 1.5vw;
     font-family: 'Fira Sans';
 }
-.projects_menu_options .projects_menu_descriptions {
+#projects_menu .projects_menu_options .projects_menu_descriptions {
     font-size: 1vw;
     font-family: 'Fira Sans';
 }
-.projects_menu_options .projects_menu_benefits_title {
+#projects_menu .projects_menu_options .projects_menu_benefits_title {
     font-size: 1vw;
     font-family: 'Fira Sans';
 }
-.projects_menu_options .projects_menu_benefits {
+#projects_menu .projects_menu_options .projects_menu_benefits {
     font-size: 1vw;
     font-family: 'Fira Sans';
 }
 @media only screen and (max-device-width: 1024px) {
-    .content #shameless_product_placement_logo {
+    .content .investment_information_header {
+        background-image: linear-gradient(black 85%, transparent);
+        height: 110vh;
+    }
+    .content .investment_information_header #shameless_product_placement_logo {
         width: 40%;
         height: auto;
         position: absolute;
@@ -231,15 +235,11 @@ html {
         top: 3%;
         transition: 250ms linear;
     }
-    .content #shameless_product_placement_logo:hover {
+    .content .investment_information_header #shameless_product_placement_logo:hover {
         filter: brightness(75%);
         transition: 250ms linear;
     }
-    .content .head_investment_information {
-        background-image: linear-gradient(black 85%, transparent);
-        height: 110vh;
-    }
-    .content .main_investment_information {
+    .content .investment_information_header .main_investment_information {
         padding-top: 30%;
         margin-left: 2%;
         margin-right: 2%;
@@ -247,34 +247,34 @@ html {
         display: block;
         align-items: center; 
     }
-    .content .video {
+    .content .investment_information_header .main_investment_information .video {
         width: 100%;
         height: 25vh;
         margin-bottom: 4%;
     }
-    .content .video #investment_video {
+    .content .investment_information_header .main_investment_information .video #investment_video {
         width: 100%;
         height: 100%;
     }
-    .content .investment_information #title {
+    .content .investment_information_header .main_investment_information .investment_information #title {
         font-size: 6vw;
         font-family: 'MuseoModerno';
         color: white;
     }
-    .content .investment_information #description {
+    .content .investment_information_header .main_investment_information .investment_information #description {
         font-size: 4vw;
         font-family: 'Fira Sans';
         color: gray;
     }
-    .content .investment_information #invested {
+    .content .investment_information_header .main_investment_information .investment_information #invested {
         font-size: 3vw;
         font-family: 'Fira Sans';
         color: white;
     }
-    .content .investment_information .investment_buttons {
+    .content .investment_information_header .main_investment_information .investment_information .investment_buttons {
         margin-bottom: 4%;
     }
-    .content .investment_information .investment_buttons #options {
+    .content .investment_information_header .main_investment_information .investment_information .investment_buttons #options {
         transition: 250ms linear;
         border-color: white;
         background-color: #7335b1;
@@ -291,13 +291,13 @@ html {
         text-decoration: none;
         filter: drop-shadow(0 5px);
     }
-    .content .investment_information .investment_buttons #options:hover {
+    .content .investment_information_header .main_investment_information .investment_information .investment_buttons #options:hover {
         background: #4c2375;
         filter: drop-shadow(0 0);
         transform: translate(0px, 5px);
         transition: 250ms linear;
     }
-    .content .investment_information .investment_buttons #information {
+    .content .investment_information_header .main_investment_information .investment_information .investment_buttons #information {
         margin-top: 1%;
         margin-left: 1%;
         transition: 250ms linear;
@@ -316,16 +316,16 @@ html {
         text-decoration: none;
         filter: drop-shadow(0 5px);
     }
-    .content .investment_information .investment_buttons #information:hover {
+    .content .investment_information_header .main_investment_information .investment_information .investment_buttons #information:hover {
         background: #4c2375;
         filter: drop-shadow(0 0);
         transform: translate(0px, 5px);
         transition: 250ms linear;
     }
-    .content .investment_information .investor_social_media {
+    .content .investment_information_header .main_investment_information .investment_information .investor_social_media {
         text-align: center;
     }
-    .content .investment_information .investor_social_media .investor_social_media_icons {
+    .content .investment_information_header .main_investment_information .investment_information .investor_social_media .investor_social_media_icons {
         display: inline;
         color: white;
         font-size: 7vw;
@@ -333,15 +333,15 @@ html {
         margin: 2%;
         transition: 250ms linear;
     }
-    .content .investment_information .investor_social_media .investor_social_media_icons:hover {
+    .content .investment_information_header .main_investment_information .investment_information .investor_social_media .investor_social_media_icons:hover {
         transition: 250ms linear;
         filter: brightness(50%);
     }
-    .content .extra_investment_information {
+    .content .investment_information_header .extra_investment_information {
         display: block;
         width: 100%;
     }
-    .content .extra_investment_information .section_titles {
+    .content .investment_information_header .extra_investment_information .section_titles {
         color: white;
         font-size: 5vw;
         font-family: 'MuseoModerno';
@@ -349,7 +349,7 @@ html {
         margin-left: 1vw;
         margin-right: 1vw;
     }
-    .content .extra_investment_information .extra_investment_subtitles {
+    .content .investment_information_header .extra_investment_information .extra_investment_subtitles {
         font-size: 4.5vw;
         font-family: 'Fira Sans';
         color: white;
@@ -358,7 +358,7 @@ html {
         margin-right: 2vw;
         font-weight: bold;
     }
-    .content .extra_investment_information .extra_investment_text {
+    .content .investment_information_header .extra_investment_information .extra_investment_text {
         font-size: 3vw;
         font-family: 'Fira Sans';
         color: white;
@@ -367,11 +367,11 @@ html {
         margin-left: 1vw;
         margin-right: 1vw;
     }
-    .content .extra_investment_information .learn_more_button_section {
+    .content .investment_information_header .extra_investment_information .learn_more_button_section {
         text-align: center;
         padding-bottom: 5%;
     }
-    .content .extra_investment_information .learn_more_button_section #learn_more_button {
+    .content .investment_information_header .extra_investment_information .learn_more_button_section #learn_more_button {
         transition: 250ms linear;
         border-color: black;
         background-color: white;
@@ -388,7 +388,7 @@ html {
         text-decoration: none;
         filter: drop-shadow(0 5px);
     }
-    .content .extra_investment_information .learn_more_button_section #learn_more_button:hover {
+    .content .investment_information_header .extra_investment_information .learn_more_button_section #learn_more_button:hover {
         transition: 250ms linear;
         transform: translate(0px, 5px);
         filter: drop-shadow(0 0);
@@ -397,30 +397,30 @@ html {
         border: none;
         background-color: white;
     }
-    .projects_menu_options {
+    #projects_menu .projects_menu_options {
         border: 1px solid black;
         margin-top: 2vh;
     }
-    .projects_menu_options .projects_menu_images {
+    #projects_menu .projects_menu_options .projects_menu_images {
         width: 100%;
     }
-    .projects_menu_options .projects_menu_titles {
+    #projects_menu .projects_menu_options .projects_menu_titles {
         font-size: 7vw;
         font-family: 'Fira Sans';
     }
-    .projects_menu_options .projects_menu_values {
+    #projects_menu .projects_menu_options .projects_menu_values {
         font-size: 5vw;
         font-family: 'Fira Sans';
     }
-    .projects_menu_options .projects_menu_descriptions {
+    #projects_menu .projects_menu_options .projects_menu_descriptions {
         font-size: 4vw;
         font-family: 'Fira Sans';
     }
-    .projects_menu_options .projects_menu_benefits_title {
+    #projects_menu .projects_menu_options .projects_menu_benefits_title {
         font-size: 4vw;
         font-family: 'Fira Sans';
     }
-    .projects_menu_options .projects_menu_benefits {
+    #projects_menu .projects_menu_options .projects_menu_benefits {
         font-size: 4vw;
         font-family: 'Fira Sans';
     }

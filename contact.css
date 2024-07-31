@@ -13,28 +13,28 @@ body {
     height: 260vh;
     overflow: hidden;
 }
-.content #contact_section {
+.content #contact #contact_section {
     display: inline-block;
     font-family: 'Oswald';
     color: white;
 }
-.content #contact_title {
+.content #contact #contact_section #contact_title {
     font-size: 5vw;
     text-align: center;
 }
-.content #contact_secondary_title {
+.content #contact #contact_section #contact_secondary_title {
     font-size: 4vw;
     text-align: center;
 }
-.content #contact_information {
+.content #contact #contact_section #contact_information {
     font-size: 1.5vw;
     text-align: left;
     margin-left: 5%;
 }
-.content .icons_section {
+.content #contact #contact_section .icons_section {
     text-align: center;
 }
-.content .icons {
+.content #contact #contact_section .icons_section .icons {
     font-size: 1.5vw;
     color: white;
     margin-left: 5%;
@@ -42,16 +42,16 @@ body {
     text-align: center;
     transition: 250ms linear;
 }
-.content .icons:hover {
+.content #contact #contact_section .icons_section .icons:hover {
     filter: brightness(50%);
     transition: 250ms linear;
 }
-.content #contact_form {
+.content #contact #contact_form {
     display: inline;
     text-align: center;
     font-family: 'Oswald';
 }
-.content .contact_form_name {
+.content #contact #contact_form .contact_form_name {
     width: 45%;
     display: inline;
     margin-top: 3%;
@@ -67,10 +67,10 @@ body {
     outline: none;
     transition: border-color .2s;
 }
-.content .contact_form_name::placeholder {
+.content #contact #contact_form .contact_form_name::placeholder {
     color: white;
 }
-.content #contact_form_email {
+.content #contact #contact_form #contact_form_email {
     width: 92.5%;
     display: inline;
     margin-top: 2%;
@@ -86,10 +86,10 @@ body {
     outline: none;
     transition: border-color .2s;
 }
-.content #contact_form_email::placeholder {
+.content #contact #contact_form #contact_form_email::placeholder {
     color: white;
 }
-.content #contact_form_company {
+.content #contact #contact_form #contact_form_company {
     width: 92.5%;
     display: inline;
     margin-top: 2%;
@@ -105,10 +105,10 @@ body {
     outline: none;
     transition: border-color .2s;
 }
-.content #contact_form_company::placeholder {
+.content #contact #contact_form #contact_form_company::placeholder {
     color: white;
 }
-.content #contact_form_message {
+.content #contact #contact_form #contact_form_message {
     width: 92.5%;
     height: 100%;
     display: inline;
@@ -124,10 +124,10 @@ body {
     margin-right: 1%;
     resize: none;
 }
-.content #contact_form_message::placeholder {
+.content #contact #contact_form #contact_form_message::placeholder {
     color: white;
 }
-.content #contact_form_submit_button {
+.content #contact #contact_form #contact_form_submit_button {
     width: 92.5%;
     display: inline;
     padding: 10px 10px;
@@ -143,7 +143,7 @@ body {
     margin-bottom: 3%;
     transition: 250ms linear;
 }
-.content #contact_form_submit_button:hover {
+.content #contact #contact_form #contact_form_submit_button:hover {
     background-color: gray;
     transition: 250ms linear;
 }
@@ -157,28 +157,28 @@ body {
         height: 260vh;
         overflow: hidden;
     }
-    .content #contact_section {
+    .content #contact #contact_section {
         display: block;
         font-family: 'Oswald';
         color: white;
     }
-    .content #contact_title {
+    .content #contact #contact_section #contact_title {
         font-size: 10vw;
         text-align: center;
     }
-    .content #contact_secondary_title {
+    .content #contact #contact_section #contact_secondary_title {
         font-size: 7vw;
         text-align: center;
     }
-    .content #contact_information {
+    .content #contact #contact_section #contact_information {
         font-size: 5vw;
         text-align: left;
         margin-left: 5%;
     }
-    .content .icons_section {
+    .content #contact #contact_section .icons_section {
         text-align: center;
     }
-    .content .icons {
+    .content #contact #contact_section .icons_section .icons {
         font-size: 7vw;
         color: white;
         margin-left: 5%;
@@ -186,16 +186,16 @@ body {
         text-align: center;
         transition: 250ms linear;
     }
-    .content .icons:hover {
+    .content #contact #contact_section .icons_section .icons:hover {
         filter: brightness(50%);
         transition: 250ms linear;
     }
-    .content #contact_form {
+    .content #contact #contact_form {
         display: inline;
         text-align: center;
         font-family: 'Oswald';
     }
-    .content .contact_form_name {
+    .content #contact #contact_form .contact_form_name {
         width: 45%;
         display: inline;
         margin-left: 1%;
@@ -210,10 +210,10 @@ body {
         outline: none;
         transition: border-color .2s;
     }
-    .content .contact_form_name::placeholder {
+    .content #contact #contact_form .contact_form_name::placeholder {
         color: white;
     }
-    .content #contact_form_email {
+    .content #contact #contact_form #contact_form_email {
         width: 92.5%;
         display: inline;
         margin-top: 3%;
@@ -229,10 +229,10 @@ body {
         outline: none;
         transition: border-color .2s;
     }
-    .content #contact_form_email::placeholder {
+    .content #contact #contact_form #contact_form_email::placeholder {
         color: white;
     }
-    .content #contact_form_company {
+    .content #contact #contact_form #contact_form_company {
         width: 92.5%;
         display: inline;
         margin-top: 3%;
@@ -248,10 +248,10 @@ body {
         outline: none;
         transition: border-color .2s;
     }
-    .content #contact_form_company::placeholder {
+    .content #contact #contact_form #contact_form_company::placeholder {
         color: white;
     }
-    .content #contact_form_message {
+    .content #contact #contact_form #contact_form_message {
         width: 92.5%;
         height: 100%;
         display: inline;
@@ -267,10 +267,10 @@ body {
         margin-right: 1%;
         resize: none;
     }
-    .content #contact_form_message::placeholder {
+    .content #contact #contact_form #contact_form_message::placeholder {
         color: white;
     }
-    .content #contact_form_submit_button {
+    .content #contact #contact_form #contact_form_submit_button {
         width: 92.5%;
         display: inline;
         padding: 10px 10px;
@@ -286,7 +286,7 @@ body {
         margin-bottom: 3%;
         transition: 250ms linear;
     }
-    .content #contact_form_submit_button:hover {
+    .content #contact #contact_form #contact_form_submit_button:hover {
         background-color: gray;
         transition: 250ms linear;
     }
