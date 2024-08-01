@@ -163,8 +163,8 @@ async function magicSlide() {
   document.querySelector("#web_designer").onclick = web_designer_extension.toggle
   const game_tester_extension = document.querySelector("#game_tester_extension")
   document.querySelector("#game_tester").onclick = game_tester_extension.toggle
-  const financier_extension = document.querySelector("#financier_extension")
-  document.querySelector("#financier").onclick = financier_extension.toggle
+  const finance_extension = document.querySelector("#finance_extension")
+  document.querySelector("#finance").onclick = finance_extension.toggle
   const marketer_extension = document.querySelector("#marketer_extension")
   document.querySelector("#marketer").onclick = marketer_extension.toggle
 }
