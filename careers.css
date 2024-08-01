@@ -145,6 +145,7 @@ body {
     margin-bottom: 4%;
 }
 .content .careers_details .scrollable_area .careers_contact_us {
+    padding-bottom: 70%;
     text-align: center;
 }
 .content .careers_details .scrollable_area .careers_contact_us #careers_contact_us_title {
@@ -326,6 +327,47 @@ body {
         margin-bottom: 4%;
     }
     .content .careers_details .scrollable_area .careers_contact_us {
-        
+        text-align: center;
+        padding-bottom: 70%;
+    }
+    .content .careers_details .scrollable_area .careers_contact_us #careers_contact_us_title {
+        margin-top: 4%;
+        margin-left: 2%;
+        margin-right: 2%;
+        color: white;
+        font-family: 'MuseoModerno';
+        font-size: 10vw;
+        text-align: center;
+        font-weight: bold;
+    }
+    .content .careers_details .scrollable_area .careers_contact_us #careers_contact_us_subtext {
+        margin-left: 2%;
+        margin-right: 2%;
+        color: white;
+        font-family: 'MuseoModerno';
+        font-size: 6vw;
+        text-align: center;
+    }
+    .content .careers_details .scrollable_area .careers_contact_us #contact_us_button {
+        transition: 250ms linear;
+        border-color: black;
+        background-color: white;
+        color: black;
+        border-radius: 10px;
+        box-sizing: border-box;
+        cursor: pointer;
+        font-size: 6vw;
+        outline: 0 solid transparent;
+        padding: 1%;
+        word-break: break-word;
+        border-style: solid;
+        font-family:'Fira Sans';
+        text-decoration: none;
+        filter: drop-shadow(0 5px);
+    }
+    .content .careers_details .scrollable_area .careers_contact_us #contact_us_button:hover {
+        transition: 250ms linear;
+        transform: translate(0px, 5px);
+        filter: drop-shadow(0 0);
     }
 }
