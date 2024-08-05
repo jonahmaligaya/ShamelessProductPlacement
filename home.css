@@ -138,13 +138,15 @@ body {
     transition: 250ms linear;
 }
 .content .home_details .scrollable_area .serve_section .serve_information .serve_list {
-    text-align: center;
-    list-style: inside;
+    display: inline-block;
+    padding-left: 0;
+    text-align: left;
 }
 .content .home_details .scrollable_area .serve_section .serve_information .serve_list .serve_description {
     color: white;
     font-size: 2vw;
     font-family: 'Fira Sans';
+    list-style: inside;
 }
 .content .home_details .scrollable_area .team_section {
     margin-bottom: 10%;
@@ -166,7 +168,7 @@ body {
 }
 .content .home_details .scrollable_area .team_section .people {
     display: grid;
-    grid-template-columns: 40% 58%;
+    grid-template-columns: 35% 63%;
     column-gap: 2%;
     margin-left: 2%;
     margin-right: 2%;
@@ -362,12 +364,12 @@ body {
         text-align: center;
     }
     .content .home_details .scrollable_area .serve_section .serve_information {
-        display: grid;
-        grid-template-columns: 33% 33% 33%;
+        display: block;
     }
     .content .home_details .scrollable_area .serve_section .serve_information .serve_images {
         width: 50%;
         text-align: center;
+        margin-top: 4%;
         margin-bottom: 4%;
     }
     .content .home_details .scrollable_area .serve_section .serve_information .serve_button_links {
@@ -377,7 +379,7 @@ body {
     }
     .content .home_details .scrollable_area .serve_section .serve_information .serve_buttons {
         color: white;
-        font-size: 5vw;
+        font-size: 8vw;
         font-family: 'Fira Sans';
         text-align: center;
         transition: 250ms linear;
@@ -396,7 +398,7 @@ body {
     }
     .content .home_details .scrollable_area .serve_section .serve_information .serve_list .serve_description {
         color: white;
-        font-size: 4vw;
+        font-size: 5vw;
         font-family: 'Fira Sans';
     }
     .content .home_details .scrollable_area .team_section {
