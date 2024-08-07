@@ -179,19 +179,7 @@ html {
     font-size: 2vw;
     font-family: 'Fira Sans';
 }
-#sponsor_options_menu .sponsor_options_menu_options .sponsor_options_menu_values {
-    font-size: 1.5vw;
-    font-family: 'Fira Sans';
-}
 #sponsor_options_menu .sponsor_options_menu_options .sponsor_options_menu_descriptions {
-    font-size: 1vw;
-    font-family: 'Fira Sans';
-}
-#sponsor_options_menu .sponsor_options_menu_options .sponsor_options_menu_benefits_title {
-    font-size: 1vw;
-    font-family: 'Fira Sans';
-}
-#sponsor_options_menu .sponsor_options_menu_options .sponsor_options_menu_benefits {
     font-size: 1vw;
     font-family: 'Fira Sans';
 }
@@ -351,19 +339,7 @@ html {
         font-size: 7vw;
         font-family: 'Fira Sans';
     }
-    #sponsor_options_menu .sponsor_options_menu_options .sponsor_options_menu_values {
-        font-size: 5vw;
-        font-family: 'Fira Sans';
-    }
     #sponsor_options_menu .sponsor_options_menu_options .sponsor_options_menu_descriptions {
-        font-size: 4vw;
-        font-family: 'Fira Sans';
-    }
-    #sponsor_options_menu .sponsor_options_menu_options .sponsor_options_menu_benefits_title {
-        font-size: 4vw;
-        font-family: 'Fira Sans';
-    }
-    #sponsor_options_menu .sponsor_options_menu_options .sponsor_options_menu_benefits {
         font-size: 4vw;
         font-family: 'Fira Sans';
     }

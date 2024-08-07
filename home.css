@@ -97,10 +97,10 @@ body {
     font-size: 2vw;
     font-family: 'Fira Sans';
     color: white;
-    margin-left: 2%;
-    margin-right: 2%;
+    margin-left: 3%;
+    margin-right: 3%;
     margin-bottom: 5%;
-    text-align: center;
+    text-align: left;
 }
 .content .home_details .scrollable_area .serve_section {
     margin-bottom: 10%;
@@ -146,7 +146,9 @@ body {
     color: white;
     font-size: 2vw;
     font-family: 'Fira Sans';
-    list-style: inside;
+    list-style-position: outside;
+    margin-left: 3%;
+    margin-right: 3%;
 }
 .content .home_details .scrollable_area .team_section {
     margin-bottom: 10%;
@@ -203,16 +205,14 @@ body {
 .content .home_details .scrollable_area .game_section {
     padding-bottom: 40%;
 }
-.content .home_details .scrollable_area .game_section .games .games_header {
-    display: grid;
-    grid-template-columns: 68% 30%;
+.content .home_details .scrollable_area .game_section .games {
     column-gap: 2%;
     margin-left: 2%;
     margin-right: 2%;
     margin-bottom: 4%;
     align-items: center;
 }
-.content .home_details .scrollable_area .game_section .games .games_header hr {
+.content .home_details .scrollable_area .game_section .games hr {
     color: white;
     border-color: white;
     text-align: center;
@@ -222,21 +222,38 @@ body {
     border-style: solid;
     opacity: 100%;
 }
-.content .home_details .scrollable_area .game_section .games .games_header .games_text .games_titles {
+.content .home_details .scrollable_area .game_section .games .games_titles {
     color: white;
     font-size: 3vw;
     font-family: 'MuseoModerno';
     margin-left: 1vw;
     margin-right: 1vw;
 }
-.content .home_details .scrollable_area .game_section .games .games_header .games_text .games_descriptions {
+.content .home_details .scrollable_area .game_section .games .games_descriptions {
     color: white;
     font-size: 1.2vw;
     font-family: 'MuseoModerno';
     margin-left: 1vw;
     margin-right: 1vw;
 }
-.content .home_details .scrollable_area .game_section .games .games_header .games_text .games_buttons {
+.content .home_details .scrollable_area .game_section .games .games_clickables {
+    display: grid;
+    column-gap: 4%;
+    grid-template-columns: 25% 71%;
+    margin-bottom: 10%;
+}
+.content .home_details .scrollable_area .game_section .games .games_clickables .games_logos {
+    width: 100%;
+    transform: scale(0.95);
+    transition: 250ms linear;
+    display: inline;
+}
+.content .home_details .scrollable_area .game_section .games .games_clickables .games_logos:hover {
+    transform: scale(1.05);
+    transition: 250ms linear;
+    padding: none;
+}
+.content .home_details .scrollable_area .game_section .games .games_clickables .games_buttons {
     border-radius: 999px;
     box-sizing: border-box;
     background-color: transparent;
@@ -254,19 +271,9 @@ body {
     margin-right: 1vw;
     transition: 250ms linear;
 }
-.content .home_details .scrollable_area .game_section .games .games_header .games_text .games_buttons:hover {
+.content .home_details .scrollable_area .game_section .games .games_clickables .games_buttons:hover {
     transition: 250ms linear;
     filter: brightness(50%);
-}
-.content .home_details .scrollable_area .game_section .games .games_header .games_logos {
-    width: 100%;
-    transform: scale(0.95);
-    transition: 250ms linear;
-}
-.content .home_details .scrollable_area .game_section .games .games_header .games_logos:hover {
-    transform: scale(1.05);
-    transition: 250ms linear;
-    padding: none;
 }
 @media only screen and (max-device-width: 1024px) {
     .content #background_video {
@@ -352,10 +359,10 @@ body {
         font-size: 4vw;
         font-family: 'Fira Sans';
         color: white;
-        margin-left: 2%;
-        margin-right: 2%;
+        margin-left: 5%;
+        margin-right: 5%;
         margin-bottom: 5%;
-        text-align: center;
+        text-align: left;
     }
     .content .home_details .scrollable_area .serve_section {
         margin-bottom: 10%;
@@ -393,13 +400,14 @@ body {
         transition: 250ms linear;
     }
     .content .home_details .scrollable_area .serve_section .serve_information .serve_list {
-        text-align: center;
-        list-style: inside;
+        list-style-position: outside;
     }
     .content .home_details .scrollable_area .serve_section .serve_information .serve_list .serve_description {
         color: white;
         font-size: 5vw;
         font-family: 'Fira Sans';
+        margin-left: 6%;
+        margin-right: 6%;
     }
     .content .home_details .scrollable_area .team_section {
         margin-bottom: 10%;
@@ -455,16 +463,14 @@ body {
     .content .home_details .scrollable_area .game_section {
         padding-bottom: 40%;
     }
-    .content .home_details .scrollable_area .game_section .games .games_header {
-        display: grid;
-        grid-template-columns: 58% 40%;
+    .content .home_details .scrollable_area .game_section .games {
         column-gap: 2%;
         margin-left: 2%;
         margin-right: 2%;
         margin-bottom: 4%;
         align-items: center;
     }
-    .content .home_details .scrollable_area .game_section .games .games_header .games_text hr {
+    .content .home_details .scrollable_area .game_section .games hr {
         color: white;
         border-color: white;
         text-align: center;
@@ -474,21 +480,38 @@ body {
         border-style: solid;
         opacity: 100%;
     }
-    .content .home_details .scrollable_area .game_section .games .games_header .games_text .games_titles {
+    .content .home_details .scrollable_area .game_section .games .games_titles {
         color: white;
-        font-size: 8vw;
+        font-size: 6vw;
         font-family: 'MuseoModerno';
         margin-left: 1vw;
         margin-right: 1vw;
     }
-    .content .home_details .scrollable_area .game_section .games .games_header .games_text .games_descriptions {
+    .content .home_details .scrollable_area .game_section .games .games_descriptions {
         color: white;
         font-size: 4vw;
         font-family: 'MuseoModerno';
         margin-left: 1vw;
         margin-right: 1vw;
     }
-    .content .home_details .scrollable_area .game_section .games .games_header .games_text .games_buttons {
+    .content .home_details .scrollable_area .game_section .games .games_clickables {
+        display: grid;
+        column-gap: 4%;
+        grid-template-columns: 35% 61%;
+        margin-bottom: 10%;
+    }
+    .content .home_details .scrollable_area .game_section .games .games_clickables .games_logos {
+        width: 100%;
+        transform: scale(0.95);
+        transition: 250ms linear;
+        display: inline;
+    }
+    .content .home_details .scrollable_area .game_section .games .games_clickables .games_logos:hover {
+        transform: scale(1.05);
+        transition: 250ms linear;
+        padding: none;
+    }
+    .content .home_details .scrollable_area .game_section .games .games_clickables .games_buttons {
         border-radius: 999px;
         box-sizing: border-box;
         background-color: transparent;
@@ -506,18 +529,8 @@ body {
         margin-right: 1vw;
         transition: 250ms linear;
     }
-    .content .home_details .scrollable_area .game_section .games .games_header .games_text .games_buttons:hover {
+    .content .home_details .scrollable_area .game_section .games .games_clickables .games_buttons:hover {
         transition: 250ms linear;
         filter: brightness(50%);
-    }
-    .content .home_details .scrollable_area .game_section .games .games_header .games_logos {
-        width: 100%;
-        transform: scale(0.95);
-        transition: 250ms linear;
-    }
-    .content .home_details .scrollable_area .game_section .games .games_header .games_logos:hover {
-        transform: scale(1.05);
-        transition: 250ms linear;
-        padding: none;
     }
 }
