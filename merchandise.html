@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Your Merchandise Store</title>
+  <style>
+    .product { margin: 20px; }
+  </style>
+</head>
+<body>
+  <h1>Merchandise Store</h1>
+  <div id="products"></div>
+
+  <script>
+    const API_URL = 'https://api.printful.com/store/products';
+    const API_KEY = 'v1e4PPaPTx1xZUf657NPXWju0xdQyy2Kp6wzt1aF';
+
+    fetch(API_URL, {
+      headers: {
+        'Authorization': 'Bearer ' + API_KEY
+      }
+    })
+    .then(response => response.json())
+    .then(data => {
+      const products = data.result;
+      const productsContainer = document.getElementById('products');
+      products.forEach(product => {
+        const productDiv = document.createElement('div');
+        productDiv.className = 'product';
+        productDiv.innerHTML = `
+          <h2>${product.name}</h2>
+          <img src="${product.thumbnail_url}" alt="${product.name}">
+          <p>Price: $${product.price}</p>
+        `;
+        productsContainer.appendChild(productDiv);
+      });
+    })
+    .catch(error => console.error('Error fetching products:', error));
+  </script>
+</body>
+</html>
