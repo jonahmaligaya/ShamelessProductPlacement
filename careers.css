@@ -192,6 +192,7 @@ body {
 @media only screen and (max-device-width: 1024px) {
     .content #background_video {
         min-height: 100vh;
+        min-height: 100dvh;
         max-width: 100%;
         object-fit: fill;
         position: sticky;
