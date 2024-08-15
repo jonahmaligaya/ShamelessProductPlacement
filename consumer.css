@@ -256,8 +256,12 @@ body {
     transform: scale(1.1);
 }
 @media only screen and (max-device-width: 1024px) {
-    html, body {
+    body {
         overflow-x: hidden;
+        height: 100%;
+        overflow: hidden !important;
+        width: 100%;
+        position: fixed;
     }
     .content .scrolling_area {
         white-space: nowrap;
