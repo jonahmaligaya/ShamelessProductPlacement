@@ -190,9 +190,12 @@ body {
     filter: drop-shadow(0 0);
 }
 @media only screen and (max-device-width: 1024px) {
+    html {
+        padding: env(safe-area-inset);
+    }
     .content #background_video {
-        min-height: 100vh;
-        min-height: 100dvh;
+        min-height: 100svh;
+        max-width: 100vw;
         max-width: 100%;
         object-fit: fill;
         position: sticky;

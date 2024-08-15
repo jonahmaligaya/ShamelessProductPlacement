@@ -278,6 +278,9 @@ body {
     filter: brightness(50%);
 }
 @media only screen and (max-device-width: 1024px) {
+    html {
+        padding: env(safe-area-inset);
+    }
     .content #background_video {
         min-height: 100svh;
         max-width: 100vw;
