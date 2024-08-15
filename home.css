@@ -143,10 +143,12 @@ body {
     text-align: left;
 }
 .content .home_details .scrollable_area .serve_section .serve_information .serve_list .serve_description {
+    min-height: 10%;
     color: white;
     font-size: 2vw;
     font-family: 'Fira Sans';
     list-style-position: outside;
+    margin-top: 5%;
     margin-left: 3%;
     margin-right: 3%;
 }
@@ -277,9 +279,8 @@ body {
 }
 @media only screen and (max-device-width: 1024px) {
     .content #background_video {
-        min-height: 100vh;
-        min-height: 100dvh;
-        max-width: 100%;
+        min-height: 100svh;
+        max-width: 100vw;
         object-fit: fill;
         position: sticky;
         position: -webkit-sticky;
