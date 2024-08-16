@@ -27,6 +27,19 @@ body {
     z-index: -1;
     filter: brightness(50%);
 }
+.content #background_video_alternative {
+    min-height: 100%;
+    max-width: 100%;
+    object-fit: fill;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    filter: brightness(50%);
+}
 .unscrollable {
     width: 100%;
     height: 100%;
@@ -278,11 +291,9 @@ body {
     filter: brightness(50%);
 }
 @media only screen and (max-device-width: 1024px) {
-    html {
-        padding: env(safe-area-inset);
-    }
     .content #background_video {
         min-height: 100svh;
+        min-height: 100vh;
         max-width: 100vw;
         object-fit: fill;
         position: sticky;
