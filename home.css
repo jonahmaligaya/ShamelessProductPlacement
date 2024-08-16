@@ -15,8 +15,7 @@ body {
     overflow: visible;
 }
 .content #background_video {
-    min-height: 100dvh;
-    min-height: 100vh;
+    min-height: 100%;
     max-width: 100%;
     object-fit: fill;
     position: sticky;
@@ -27,10 +26,10 @@ body {
     bottom: 0;
     z-index: -1;
     filter: brightness(50%);
+    visibility: visible;
 }
 .content #background_video_alternative {
-    min-height: 100dvh;
-    min-height: 100vh;
+    min-height: 100%;
     max-width: 100%;
     object-fit: fill;
     position: sticky;
@@ -41,6 +40,7 @@ body {
     bottom: 0;
     z-index: -1;
     filter: brightness(50%);
+    visibility: hidden;
 }
 .unscrollable {
     width: 100%;
@@ -306,6 +306,22 @@ body {
         bottom: 0;
         z-index: -1;
         filter: brightness(50%);
+        visibility: hidden;
+    }
+    .content #background_video_alternative {
+        min-height: 100svh;
+        min-height: 100vh;
+        max-width: 100vw;
+        object-fit: fill;
+        position: sticky;
+        position: -webkit-sticky;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        filter: brightness(50%);
+        visibility: visible;
     }
     .unscrollable {
         width: 100%;
