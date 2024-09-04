@@ -35,12 +35,21 @@
             <img id="background_video_alternative" src="assets/home_background.png">
             <div class="home_details">
                 <a href="home.html">
-                    <img id="shameless_product_placement_logo" src="assets/shameless_product_placement_logo.png" alt="Shameless Product Placement Logo">
+                    <video id="shameless_product_placement_logo" preload="auto" autoplay loop muted>
+                        <source
+                            src="assets/shameless_product_placement_logo.webm"
+                            type="video/webm"
+                        >
+                        <source
+                            src="assets/shameless_product_placement_logo.mov"
+                            type="video/mp4"; codecs="hvc1"
+                        >
+                    </video>
                 </a>
-                <p id="home_text">Welcome to Shameless Product Placement, where world class gaming intersects with brand promotion!</p>
                 <div class="scroll">
                     <a id="scroll" href="#scrollable_area"><img id="down_arrow" src="assets/down_arrow.png" alt="Down Arrow"></a>
                 </div>
+                <p id="home_text">Welcome to Shameless Product Placement, where world class gaming intersects with brand promotion!</p>
                 <div class="scrollable_area" id="scrollable_area">
                     <p id="story_title">OUR STORY</p>
                     <div class="description_section">

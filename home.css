@@ -53,22 +53,16 @@ body {
 }
 .content .home_details #shameless_product_placement_logo {
     position: absolute;
-    width: 15%;
-    right: 2.5%;
-    top: 2.5%;
-    transition: 250ms linear;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 40%;
 }
 .content .home_details #shameless_product_placement_logo:hover {
     transition: 250ms linear;
     filter: brightness(75%);
-}
-.content .home_details #home_text {
-    color: white;
-    font-family: 'MuseoModerno';
-    position: absolute;
-    top: 30%;
-    left: 2%;
-    font-size: 5vw;
 }
 .content .home_details #scroll {
     display: inline-block;
@@ -87,6 +81,16 @@ body {
 .content .home_details #scroll #down_arrow:hover {
     transition: 250ms linear;
     filter: brightness(50%);
+}
+.content .home_details #home_text {
+    color: white;
+    font-family: 'MuseoModerno';
+    font-size: 5vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    position: absolute;
+    top: 140%;
+    left: 1%;
 }
 .content .home_details .scrollable_area #story_title {
     color: white;
@@ -334,22 +338,17 @@ body {
     }
     .content .home_details #shameless_product_placement_logo {
         position: absolute;
-        width: 40%;
-        right: 3%;
-        top: 3%;
+        margin: auto;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 80%;
         transition: 250ms linear;
     }
     .content .home_details #shameless_product_placement_logo:hover {
         transition: 250ms linear;
         filter: brightness(75%);
-    }
-    .content .home_details #home_text {
-        color: white;
-        font-family: 'MuseoModerno';
-        position: absolute;
-        top: 30%;
-        left: 2%;
-        font-size: 10vw;
     }
     .content .home_details #scroll {
         display: inline-block;
@@ -368,6 +367,14 @@ body {
     .content .home_details #scroll #down_arrow:hover {
         transition: 250ms linear;
         filter: brightness(50%);
+    }
+    .content .home_details #home_text {
+        color: white;
+        font-family: 'MuseoModerno';
+        position: absolute;
+        top: 130%;
+        left: 2%;
+        font-size: 10vw;
     }
     .content .home_details .scrollable_area #story_title {
         color: white;
