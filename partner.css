@@ -36,7 +36,7 @@ html {
     filter: brightness(50%);
 }
 .content #shameless_product_placement_logo {
-    width: 55%;
+    width: 40%;
     height: auto;
     position: absolute;
     margin: auto;
@@ -192,7 +192,7 @@ html {
         filter: brightness(50%);
     }
     .content #shameless_product_placement_logo {
-        width: 90%;
+        width: 70%;
         height: auto;
         position: absolute;
         margin: auto;

@@ -51,7 +51,7 @@ body {
 }
 .content .careers_details #shameless_product_placement_logo {
     position: absolute;
-    width: 15%;
+    width: 12.5%;
     right: 2.5%;
     top: 2.5%;
     transition: 250ms linear;
@@ -246,7 +246,7 @@ body {
     }
     .content .careers_details #shameless_product_placement_logo {
         position: absolute;
-        width: 40%;
+        width: 20%;
         right: 3%;
         top: 3%;
         transition: 250ms linear;

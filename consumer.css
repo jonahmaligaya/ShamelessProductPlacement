@@ -58,7 +58,7 @@ body {
 .content #blurrable_section #shameless_product_placement_logo {
     position: absolute;
     height: auto;
-    width: 15%;
+    width: 12.5%;
     top: 3%;
     right: 3%;
     transition: 250ms linear;
@@ -295,7 +295,7 @@ body {
     .content #blurrable_section #shameless_product_placement_logo {
         position: absolute;
         height: auto;
-        width: 40%;
+        width: 20%;
         top: 3%;
         right: 3%;
         transition: 250ms linear;

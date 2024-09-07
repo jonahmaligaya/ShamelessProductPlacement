@@ -25,7 +25,7 @@ html {
     height: 110vh;
 }
 .content .investment_information_header #shameless_product_placement_logo {
-    width: 15%;
+    width: 12.5%;
     height: auto;
     position: absolute;
     right: 2%;
@@ -206,7 +206,7 @@ html {
         height: 110vh;
     }
     .content .investment_information_header #shameless_product_placement_logo {
-        width: 40%;
+        width: 20%;
         height: auto;
         position: absolute;
         right: 3%;
