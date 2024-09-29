@@ -40,8 +40,7 @@ html {
     height: auto;
     position: absolute;
     margin: auto;
-    left: 0;
-    right: 0;
+    right: 20%;
     top: 0;
     bottom: 0;
     transition: 250ms linear;
@@ -222,6 +221,7 @@ html {
         margin: auto;
         left: 0;
         right: 0;
+        top: 10%;
         bottom: 50%;
         transition: 250ms linear;
     }
@@ -231,7 +231,7 @@ html {
     }
     .content #sponsor_buttons {
         position: absolute;
-        top: 40%;
+        top: 50%;
     }
     .content #sponsor_buttons #sponsor_options_menu_button {
         height: 60px;

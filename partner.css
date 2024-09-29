@@ -196,6 +196,7 @@ html {
         height: auto;
         position: absolute;
         margin: auto;
+        top: 10%;
         left: 0;
         right: 0;
         bottom: 50%;
@@ -207,7 +208,7 @@ html {
     }
     .content #partner_buttons {
         position: absolute;
-        top: 40%;
+        top: 50%;
     }
     .content #partner_buttons #partner_button {
         height: 60px;
